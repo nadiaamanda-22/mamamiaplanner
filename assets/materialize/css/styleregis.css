@@ -1,0 +1,84 @@
+
+body {
+   background-image: url('../../img/login/img/bg.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.container {
+   margin: 0 auto;
+   margin-top: 100px;
+   background-color: white;
+   border-radius: 30px;
+   filter: drop-shadow(2px 3px 1px rgba(0,0,0,0.6));
+   padding-bottom: 10px;
+}
+
+.container img {
+   width: 500px;
+   margin-top: 80px;
+}
+
+
+.text {
+   margin-bottom: 20px;
+   font-size: 13px;
+   color: #666666;
+   font-family: 'nunito';
+   font-weight: lighter;
+}
+
+h5{
+   font-weight: bold;
+   font-family: 'Sulphur Point';
+}
+
+.reg {
+   font-size: 13px;
+}
+
+.link {
+   font-weight: bold;
+}
+
+.button {
+   border-radius: 8px;
+   font-weight: bold;
+   margin-top: 20px;
+   background-color: #aa5806;
+   color: white;
+   text-align: center;
+   font-family: 'Sulphur Point';
+} 
+
+.here {
+   color: #aa5806;
+   font-weight: bold;
+}
+
+.forgot {
+   font-size: 13px;
+   font-style: italic;
+   color: #666;
+}
+
+form{
+   font-family: 'Sulphur Point';
+   margin-top: 50px;
+}
+
+form input {
+   font-family: 'Sulphur Point';
+}
+
+
+ /*
+  When creating your CSS selector,
+  change "brown" to something of your choosing
+  */
+  .waves-effect.waves-brown .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+    background-color: rgba(121, 85, 72, 0.65);
+  }
+          

@@ -1,0 +1,235 @@
+body {
+    font-family: 'Sulphur Point';
+}
+
+.slider h3,
+.slider h5 {
+    text-shadow: 1px 1px 1px black;
+}
+
+h5{
+    font-family: 'Sulphur Point';
+}
+
+.slider h3 {
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+}
+.slider .judul {
+   font-size: 50px;
+}
+.slider .welcome {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+
+.slider h5 {
+    font-family: 'Caveat', cursive;
+}
+
+.about h5 {
+    font-family: 'Sulphur Point';
+    
+}
+
+.nav-wrapper .logobaru img {
+    width: 70px;
+    margin-bottom: 50px;
+}
+
+.nav-wrapper .logobaru span{
+    font-size: 20px;
+}
+
+.nav-wrapper .logobaru h5 {
+    font-family: 'caveat';
+    color: #aa5806;
+}
+
+.nav-wrapper .login{
+    padding-left: 40px;
+  
+}
+
+.login li a:hover {
+    background-color:lightsalmon;
+    color: white !important;
+}
+
+.slider img {
+    filter: brightness(50%);
+}
+
+.menu a,
+.sidenav {
+    font-family: 'Sulphur Point';
+    font-weight: 400;
+}
+
+hr{
+    width: 170px;
+    border-top: 3px solid brown;
+    border-radius: 30px;
+}
+
+.logo2 img{
+    width: 250px;
+    margin-top: 5px;
+}
+
+
+
+.align p {
+    text-align: justify;
+    margin-top: 35px;
+    font-family: 'Sulphur Point';
+    font-weight: 400;
+}
+
+.menu li a:hover{
+    background-color: burlywood;
+}
+
+.sidenav li a:hover {
+    background-color: burlywood;
+}
+
+
+.mama h3{
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.mama .go {
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.mama a{
+    width: 180px;
+    height: 42px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.mama a p{
+    font-family: 'Sulphur Point';
+    font-weight: bold;
+    margin-top: -1px;
+    font-size: 16px;   
+}
+
+.parallax-container{
+   height: 300px;
+}
+
+.parallax img {
+    filter: blur(1.5px) brightness(50%);
+}
+
+footer {
+    font-family: 'Sulphur Point';
+}
+
+.Pkiri, .Pkanan{
+    opacity: 0;
+    transform: translate(-50px,0);
+    transition: 1s;
+}
+
+.Pkanan {
+    transform: translate(50px,0);
+}
+
+.Pkiri.pMuncul, .Pkanan.pMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.quotes {
+    font-family: 'Sulphur Point';
+    font-size: 20px;
+}
+
+
+.our .team img {
+    border-radius: 50%;
+    max-width: 60px;
+    margin-top: 5px;
+    filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.5));
+}
+
+footer .footer-copyright {
+    padding-bottom: 20px;
+
+ }
+
+ section {
+     padding-top: 50px;
+ }
+
+ .team .name {
+    display: inline-block;
+    padding-left: 10px;
+ }
+
+ .team .name p {
+     font-size: 12px;
+ }
+
+ .name span{
+     font-weight: bold;
+     font-size: 18px;
+     color: burlywood;
+ }
+
+ footer .footer-copyright .textcopy {
+    padding-top: 20px;
+
+ }
+
+ footer .content {
+     margin-bottom: 30px;
+
+ }
+
+ footer .content img {
+     height: 220px;
+ }
+
+ footer .content .logo {
+     margin-left: 38px;
+     font-weight: bold;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*
+  When creating your CSS selector,
+  change "brown" to something of your choosing
+  */
+  .waves-effect.waves-orange .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+     background-color: rgba(255, 255, 255, 0.753);
+   }
+

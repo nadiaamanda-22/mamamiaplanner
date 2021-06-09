@@ -1,0 +1,30 @@
+.slider ul li .judul {
+    margin-top: 80px;
+    font-family: 'caveat';
+    font-weight: bold;
+    font-size: 70px;
+    
+}
+
+.jadwal {
+    padding-top: 20px;
+}
+
+.jadwal h5 {
+    font-family: 'caveat';
+    color: #aa5806;
+}
+
+.card-panel {
+    height: 350px;
+    border: 2px solid #aa5806;
+}
+
+.card-panel i {
+    margin-top: 90px;
+}
+
+.jadwal .cari {
+    margin-top: 25px;
+}
+

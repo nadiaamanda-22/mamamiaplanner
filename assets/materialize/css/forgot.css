@@ -1,0 +1,51 @@
+
+body {
+   background-image: url('../../img/login/img/bg.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: 'Poppins';
+}
+
+.container {
+   margin-top: 160px;
+   border-radius: 0px;
+}
+
+.container .card{
+   border-radius: 10px;
+}
+
+.container .card .card-action{
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.button {
+   margin-top: 20px;
+   width: 200px;
+   background-color: #aa5806;
+   color: white;
+   font-family: 'Poppins';
+   font-size: 16px;
+}
+
+.form-field .button {
+   border-radius: 50px;
+}
+
+.regis .card .card-action{
+   background-color: #aa5806;
+}
+
+.card h3 {
+   font-size: 30px;
+}
+
+.card .silahkan {
+   font-size: 11px;
+   color: #e9eceb;
+}
+
+.card-action {
+ background-color: #aa5806;
+}
