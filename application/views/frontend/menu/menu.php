@@ -13,122 +13,35 @@
    </div>
 
    <div class="container">
-      <h4 class="judul-menu">100 Menu Tersedia</h4>
+      <h4 class="judul-menu"><?= $result['total_data'] ?> Menu Tersedia</h4>
       <div class="row">
-         <div class="col m4 s12">
-            <div class="card menu">
-               <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator responsive-img" src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg') ?>">
-               </div>
-               <div class="card-content">
-                  <span class="card-title activator" style="font-weight: bold;">Ayam Woku
-                     <i class="material-icons right">more_vert</i>
-                  </span>
-                  <hr>
-                  <p><button type="submit" href="#">Detail</button></p>
-               </div>
-               <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Ayam Woku<i class="material-icons right">close</i></span>
-                  <p>Bahan :</p>
-               </div>
-            </div>
-         </div>
-
-         <div class="col m4 s12">
-            <div class="card menu">
-               <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator responsive-img" src="<?= base_url('assets/img/menu/menu/bibimbap_.jpg') ?>">
-               </div>
-               <div class="card-content">
-                  <span class="card-title activator" style="font-weight: bold;">Bibimbap
-                     <i class="material-icons right">more_vert</i>
-                  </span>
-                  <hr>
-                  <p><button type="submit" href="#">Detail</button></p>
-               </div>
-               <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Bibimbap<i class="material-icons right">close</i></span>
-                  <p>Bahan :</p>
+         <?php foreach ($resep as $r) : ?>
+            <div class="col m4 s12">
+               <div class="card menu">
+                  <div class="card-image waves-effect waves-block waves-light">
+                     <img class="activator responsive-img" src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg') ?>">
+                  </div>
+                  <div class="card-content">
+                     <span class="card-title activator" style="font-weight: bold;"><?= $r['nama_resep'] ?>
+                        <i class="material-icons right">more_vert</i>
+                     </span>
+                     <hr>
+                     <p><button type="submit" href="#">Detail</button></p>
+                  </div>
+                  <div class="card-reveal">
+                     <span class="card-title grey-text text-darken-4"><?= $r['nama_resep'] ?><i class="material-icons right">close</i></span>
+                     <p>Bahan :</p>
+                     <?php $bahan = explode(',', $r['bahan']); ?>
+                     <?php foreach ($bahan as $key => $value) : ?>
+                        <ul type="cirle">
+                           <li> > <?= $value ?></li>
+                        </ul>
+                     <?php endforeach; 
+                     ?>
+                  </div>
                </div>
             </div>
-         </div>
-
-         <div class="col m4 s12">
-            <div class="card menu">
-               <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator responsive-img" src="<?= base_url('assets/img/menu/menu/bihun_sayur.jpg') ?>">
-               </div>
-               <div class="card-content">
-                  <span class="card-title activator" style="font-weight: bold;">Bihun Sayur
-                     <i class="material-icons right">more_vert</i>
-                  </span>
-                  <hr>
-                  <p><button type="submit" href="#">Detail</button></p>
-               </div>
-               <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Bihun Sayur<i class="material-icons right">close</i></span>
-                  <p>Bahan :</p>
-               </div>
-            </div>
-         </div>
-
-         <div class="col m4 s12">
-            <div class="card menu">
-               <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator responsive-img" src="<?= base_url('assets/img/menu/menu/chicken_rol.jpg') ?>">
-               </div>
-               <div class="card-content">
-                  <span class="card-title activator" style="font-weight: bold;">Chicken Roll
-                     <i class="material-icons right">more_vert</i>
-                  </span>
-                  <hr>
-                  <p><button type="submit" href="#">Detail</button></p>
-               </div>
-               <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Chicken Roll<i class="material-icons right">close</i></span>
-                  <p>Bahan :</p>
-               </div>
-            </div>
-         </div>
-
-         <div class="col m4 s12">
-            <div class="card menu">
-               <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator responsive-img" src="<?= base_url('assets/img/menu/menu/nasi_kepal.jpg') ?>">
-               </div>
-               <div class="card-content">
-                  <span class="card-title activator" style="font-weight: bold;">Nasi Kepal
-                     <i class="material-icons right">more_vert</i>
-                  </span>
-                  <hr>
-                  <p><button type="submit" href="#">Detail</button></p>
-               </div>
-               <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Nasi Kepal<i class="material-icons right">close</i></span>
-                  <p>Bahan :</p>
-               </div>
-            </div>
-         </div>
-
-         <div class="col m4 s12">
-            <div class="card menu">
-               <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator responsive-img" src="<?= base_url('assets/img/menu/menu/omlet_sayur.jpg') ?>">
-               </div>
-               <div class="card-content">
-                  <span class="card-title activator" style="font-weight: bold;">Omelet Sayur
-                     <i class="material-icons right">more_vert</i>
-                  </span>
-                  <hr>
-                  <p><button type="submit" href="#">Detail</button></p>
-               </div>
-               <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Omelet Sayur<i class="material-icons right">close</i></span>
-                  <p>Bahan :</p>
-               </div>
-            </div>
-         </div>
-
+         <?php endforeach; ?>
       </div>
 
       <div class="container">
