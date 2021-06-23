@@ -38,7 +38,7 @@
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons brown-text">menu</i></a>
 
                     <ul class=" right hide-on-med-and-down login">
-                        <li><a href="<?php echo base_url() ?>login" class="brown-text"><i class=" material-icons left">account_circle</i>Masuk atau Daftar</a></li>
+                        <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masuk atau Daftar</a></li>
                     </ul>
 
                     <ul class="menu right hide-on-med-and-down">
