@@ -57,7 +57,7 @@
                         <div class="row center">
                            <div class="col s12 center">
                               <a href="<?php echo base_url() ?>home" class="waves-effect waves-teal btn-flat button">Masuk ke Akun Saya</a>
-                              <p class="reg center">Belum Punya Akun? <a href="<?php echo base_url() ?>registrasi" class="here">Daftar
+                              <p class="reg center">Belum Punya Akun? <a href="<?php echo base_url() ?>auth/registrasi" class="here">Daftar
                                     Disini</a></p>
                            </div>
                         </div>
@@ -71,6 +71,16 @@
 
    <!--JavaScript at end of body for optimized loading-->
    <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/materialize.min.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <script>
+      Swal.fire({
+         icon: 'error',
+         title: 'Oops...',
+         text: 'Something went wrong!',
+         footer: '<a href="">Why do I have this issue?</a>'
+      })
+   </script>
 </body>
 
 </html>

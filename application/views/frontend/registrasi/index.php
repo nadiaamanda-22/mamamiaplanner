@@ -29,41 +29,41 @@
             </div>
             <div class="col m6 s12">
                <div class="input-field col s12">
-                  <form action="" method="POST">
+                  <form action="" method="post">
                      <h5>Daftar</h5>
                      <p class="text">Silahkan Isi Data pada Kolom yang Tersedia</p>
                      <div class="row">
                         <div class="input-field col s10 name">
                            <i class="material-icons prefix">account_circle</i>
-                           <input placeholder="Username" name="username" id="username" type="text">
+                           <input placeholder="Username" name="username" id="username" type="text" value="<?= $this->form_validation->set_value('username') ?>">
                            <label for="username">Username</label>
-                           <span class="helper-text" data-error="Username tidak sesuai"><?= form_error('name') ?></span>
+                           <span class="helper-text"><?= $this->form_validation->error('username'); ?></span>
                         </div>
 
                         <div class="input-field col s10 email">
                            <i class="material-icons prefix">email</i>
-                           <input placeholder="Email" name="email" id="email" type="text">
+                           <input placeholder="Email" name="email" id="email" type="text" value="<?= $this->form_validation->set_value('email') ?>">
                            <label for="email">Alamat Email</label>
-                           <span class="helper-text" data-error="Email tidak sesuai" data-success><?= form_error('email') ?></span>
+                           <span class="helper-text"><?= $this->form_validation->error('email'); ?></span>
                         </div>
 
                         <div class="input-field col s10 password">
                            <i class="material-icons prefix">lock</i>
-                           <input placeholder="Kata Sandi" name="password" id="password" type="password">
-                           <label for="password">Kata Sandi</label>
-                           <span class="helper-text" data-error="Password tidak sesuai" data-success><?= form_error('password') ?></span>
+                           <input placeholder="Kata Sandi" name="password1" id="password1" type="password">
+                           <label for="password1">Kata Sandi</label>
+                           <span class="helper-text"><?= $this->form_validation->error('password1'); ?></span>
                         </div>
 
                         <div class="input-field col s10 password">
                            <i class="material-icons prefix">lock</i>
                            <input placeholder="Kata Sandi" name="password2" id="password2" type="password">
-                           <label for="password">Ulangi Kata Sandi</label>
-                           <span class="helper-text" data-error="Password tidak sesuai" data-success><?= form_error('password1') ?></span>
+                           <label for="password2">Ulangi Kata Sandi</label>
+                           <span class="helper-text"><?= $this->form_validation->error('password2'); ?></span>
                         </div>
 
                         <div class="row center">
                            <div class="col s12 center">
-                              <a href="<?= base_url() ?>Registrasi/daftar" type="submit" name="submit_registrasi" class="waves-effect waves-teal btn-flat button">Daftar</a>
+                              <button type="submit" name="submit_registrasi" class="waves-effect waves-teal btn-flat button">Daftar</button>
                               <p class="reg center">Sudah Punya Akun? <a href="<?php echo base_url() ?>login" class="here">Masuk Disini</a>
                               </p>
                            </div>
