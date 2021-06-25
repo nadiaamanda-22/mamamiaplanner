@@ -34,13 +34,15 @@
                     <a href="#home" class="brand-logo responsive-img logobaru"><img src="<?php echo base_url() ?>assets/img/logo/logobaru.png" alt="">
                         <span class="right brown-text">Mamamia Planner</span>
                     </a>
-
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons brown-text">menu</i></a>
-
                     <ul class=" right hide-on-med-and-down login">
-                        <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masuk atau Daftar</a></li>
-                    </ul>
+                        <?php if ($this->session->userdata() != null) : ?>
+                            <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i><?= $this->session->userdata('username') ?></a></li>
+                        <?php else : ?>
+                            <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masukk / Daftar</a></li>
+                        <?php endif; ?>
 
+                    </ul>
                     <ul class="menu right hide-on-med-and-down">
                         <li><a href="<?php echo base_url() ?>home" class="brown-text">Beranda</a></li>
                         <li><a href="<?php echo base_url() ?>penjadwalan" class="brown-text">Penjadwalan</a></li>

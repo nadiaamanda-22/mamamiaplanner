@@ -10,7 +10,41 @@ class Auth extends CI_controller
     }
     public function index()
     {
-        $this->load->view('frontend/home/login.php');
+        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email', ['required' => 'Email harus diisi !!', 'valid_email' => 'Format email salah !!']);
+        $this->form_validation->set_rules('password', 'Password', 'required|trim', ['required' => 'Password harus diisi !!']);
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('frontend/login/index');
+        } else {
+
+            $data = [
+                'email_user' => $this->input->post('email'),
+                'password_user' => $this->input->post('password')
+            ];
+
+            $result = $this->Auth_Model->loginUser($data);
+
+            if ($result['success']) {
+                $data = $result['data'];
+                $data_session = [
+                    'id_user' => $data['id_user'],
+                    'role_id' => $data['role_id'],
+                    'username' => $data['username'],
+                    'token' => $data['token']
+                ];
+                $this->session->set_userdata($data_session);
+                if ($data['role_id'] == 11) {
+                    echo 'Selamat datang Admin';
+                } else {
+
+                    redirect('home');
+                }
+            } else {
+                $message = $result['error'];
+                $this->load->view('frontend/login/index');
+            }
+        }
+       
     }
     public function registrasi()
     {
@@ -25,8 +59,8 @@ class Auth extends CI_controller
             $data = [
                 'username' => $this->input->post('username'),
                 'email_user' => $this->input->post('email'),
-                'password_user' => md5($this->input->post('password')),
-                'fullname' => 'mamamia-' . uniqid(),
+                'password_user' => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
+                'full_name' => 'mamamia-' . uniqid(),
                 'foto_user' => 'default.jpg',
                 'role_id' => 12,
                 'is_active' =>  date('j M Y')
@@ -34,11 +68,11 @@ class Auth extends CI_controller
             $result = $this->Auth_Model->registrasiUser($data);
 
             if ($result['status'] == 400) {
-                $this->session->set_flashdata('flashdata', 'Email sudah digunakan !!, Silahkan gunakan email yang berbeda !!');
+                $this->session->set_flashdata('error', 'Email sudah digunakan !!, Silahkan gunakan email yang berbeda !!');
                 $this->load->view('frontend/registrasi/index');
             } else {
-                $this->session->set_flashdata('flashdata', 'Registrasi berhasil !!, Silahkan Login');
-                redirect('Auth');
+                $this->session->set_flashdata('success', 'Registrasi berhasil !!, Silahkan Login');
+                $this->load->view('frontend/registrasi/index');
             }
         }
 

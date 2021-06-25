@@ -64,7 +64,7 @@
                         <div class="row center">
                            <div class="col s12 center">
                               <button type="submit" name="submit_registrasi" class="waves-effect waves-teal btn-flat button">Daftar</button>
-                              <p class="reg center">Sudah Punya Akun? <a href="<?php echo base_url() ?>login" class="here">Masuk Disini</a>
+                              <p class="reg center">Sudah Punya Akun? <a href="<?php echo base_url() ?>auth" class="here">Masuk Disini</a>
                               </p>
                            </div>
                         </div>
@@ -78,6 +78,29 @@
 
    <!--JavaScript at end of body for optimized loading-->
    <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/materialize.min.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <?php if ($this->session->flashdata('error')) : ?>
+      <script>
+         Swal.fire({
+            icon: 'error',
+            title: 'Email sudah digunakan !!',
+            text: 'Silahkan gunakan email yang berbeda',
+         })
+      </script>
+   <?php else : ?>
+   <?php endif; ?>
+   <?php if ($this->session->flashdata('success')) : ?>
+      <script>
+         Swal.fire({
+            icon: 'success',
+            title: 'Registrasi berhasil !!',
+            text: 'Silahkan login',
+            time: 1000
+         }).then(function() {
+            window.location = '<?= base_url() ?>Auth';
+         });
+      </script>
+   <?php endif; ?>
 </body>
 
 </html>

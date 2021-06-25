@@ -13,4 +13,15 @@ class Auth_Model extends CI_Model
 
         return $result;
     }
+
+
+    public function loginUser($data)
+    {
+        $client = new Client();
+        $response = $client->request('POST', 'localhost:3000/sign-in/', ['form_params' => $data]);
+
+        $result = json_decode($response->getBody()->getContents(), TRUE);
+
+        return $result;
+    }
 }
