@@ -31,22 +31,22 @@
 
             <div class="col m6 s12">
                <div class="input-field col s12">
-                  <form>
+                  <form method="post" action="">
                      <h5>Masuk untuk Melanjutkan</h5>
                      <p class="text">Harap Masuk untuk Melanjutkan</p>
 
                      <div class="row">
                         <div class="input-field col s10 email">
                            <i class="material-icons prefix">email</i>
-                           <input placeholder="Username atau Email" id="nama" name="nama" type="text" class="validate" required>
-                           <label for="nama">Alamat Email</label>
-                           <span class="helper-text" data-error="Email / Username tidak sesuai" data-success></span>
+                           <input placeholder="Masukan Email....." id="email" name="email" type="text" value="<?= $this->form_validation->set_value('email') ?>">
+                           <label for="email">Alamat Email</label>
+                           <span class="helper-text"><?= $this->form_validation->error('email'); ?></span>
                         </div>
                         <div class="input-field col s10 password">
                            <i class="material-icons prefix">lock</i>
-                           <input placeholder="Kata Sandi" id="password" type="password" class="validate" required>
+                           <input placeholder="Masukan Kata Sandi....." name="password" id="password" type="password">
                            <label for="password">Kata Sandi</label>
-                           <span class="helper-text" data-error="Kata sandi tidak sesuai" data-success></span>
+                           <span class="helper-text"><?= $this->form_validation->error('password'); ?></span>
                         </div>
 
                         <div class="col s10 forgot">
@@ -56,7 +56,7 @@
                         </div>
                         <div class="row center">
                            <div class="col s12 center">
-                              <a href="<?php echo base_url() ?>home" class="waves-effect waves-teal btn-flat button">Masuk ke Akun Saya</a>
+                              <button type="submit" name="btn_login" class="waves-effect waves-teal btn-flat button">Masuk ke Akun Saya</button>
                               <p class="reg center">Belum Punya Akun? <a href="<?php echo base_url() ?>auth/registrasi" class="here">Daftar
                                     Disini</a></p>
                            </div>
@@ -71,16 +71,8 @@
 
    <!--JavaScript at end of body for optimized loading-->
    <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/materialize.min.js"></script>
-   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-   <script>
-      Swal.fire({
-         icon: 'error',
-         title: 'Oops...',
-         text: 'Something went wrong!',
-         footer: '<a href="">Why do I have this issue?</a>'
-      })
-   </script>
+
 </body>
 
 </html>
