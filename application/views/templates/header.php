@@ -25,7 +25,6 @@
 </head>
 
 <body>
-
     <!-- Navbar -->
     <div class="navbar-fixed">
         <nav class=" amber lighten-4">
@@ -41,6 +40,11 @@
                         <?php else : ?>
                             <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masukk / Daftar</a></li>
                         <?php endif; ?>
+
+                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                        sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover on bottom
+                        </button>
 
                     </ul>
                     <ul class="menu right hide-on-med-and-down">
