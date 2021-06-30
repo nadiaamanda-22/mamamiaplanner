@@ -36,10 +36,10 @@
                     </a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons brown-text">menu</i></a>
                     <ul class=" right hide-on-med-and-down login">
-                        <?php if ($this->session->userdata() != null) : ?>
+                        <?php if ($this->session->userdata('username') != null) : ?>
                             <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i><?= $this->session->userdata('username') ?></a></li>
                         <?php else : ?>
-                            <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masukk / Daftar</a></li>
+                            <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masuk / Daftar</a></li>
                         <?php endif; ?>
 
                     </ul>
@@ -48,6 +48,7 @@
                         <li><a href="<?php echo base_url() ?>penjadwalan" class="brown-text">Penjadwalan</a></li>
                         <li><a href="<?= base_url() ?>menu" class="brown-text">Menu</a></li>
                         <li><a href="#portfolio" class="brown-text">Forum</a></li>
+                        <li><a href="<?= base_url() ?>Auth/logout" class="brown-text">Logout</a></li>
                     </ul>
                 </div>
             </div>

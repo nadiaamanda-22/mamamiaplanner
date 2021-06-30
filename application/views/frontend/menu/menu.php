@@ -19,7 +19,7 @@
             <div class="col m4 s12">
                <div class="card menu">
                   <div class="card-image waves-effect waves-block waves-light">
-                     <img class="activator responsive-img" src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg') ?>">
+                     <img class="activator responsive-img" src="http://localhost:3000/<?= $r['gambar_resep']  ?>">
                   </div>
                   <div class="card-content">
                      <span class="card-title activator" style="font-weight: bold;"><?= $r['nama_resep'] ?>
@@ -36,7 +36,7 @@
                         <ul type="cirle">
                            <li> > <?= $value ?></li>
                         </ul>
-                     <?php endforeach; 
+                     <?php endforeach;
                      ?>
                   </div>
                </div>

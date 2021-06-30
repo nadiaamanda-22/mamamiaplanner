@@ -34,13 +34,13 @@ class Auth extends CI_controller
                 ];
                 $this->session->set_userdata($data_session);
                 if ($data['role_id'] == 11) {
-                    echo 'Selamat datang Admin';
+                    redirect('admin');
                 } else {
 
                     redirect('home');
                 }
             } else {
-                $message = $result['error'];
+                $this->session->set_flashdata('l_error', 'Email atau password salah !!');
                 $this->load->view('frontend/login/index');
             }
         }
@@ -82,5 +82,11 @@ class Auth extends CI_controller
         // } else {
         //     redirect('Auth/index');
         // }
+    }
+
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect('auth', 'refresh');
     }
 }
