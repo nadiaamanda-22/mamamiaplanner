@@ -26,7 +26,7 @@
                         <i class="material-icons right">more_vert</i>
                      </span>
                      <hr>
-                     <p><button type="submit" href="#">Detail</button></p>
+                     <p><button><a href="<?= base_url() ?>Menu/details/<?= $r['id_resep'] ?>">Detail</a></button></p>
                   </div>
                   <div class="card-reveal">
                      <span class="card-title grey-text text-darken-4"><?= $r['nama_resep'] ?><i class="material-icons right">close</i></span>
