@@ -27,11 +27,6 @@
 </head>
 
 <body>
-<ul id="dropdown1" class="dropdown-content dropmenu" style="width:100%;">
-  <li><a href="#!">Profil</a></li>
-  <li class="divider"></li>
-  <li><a href="#!"><i class="fi-rr-sign-in"></i>Logout</a></li>
-</ul> 
     <!-- Navbar -->
     <div class="navbar-fixed">
         <nav class=" amber lighten-4">
@@ -49,10 +44,9 @@
 				</a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons brown-text">menu</i></a>
                     <ul class=" right hide-on-med-and-down login">
-                        <?php if ($this->session->userdata() != null) : ?>
-                            <li><a href="#!" class="brown-text dropdown-trigger" data-target="dropdown1"><i class=" material-icons left">account_circle</i><?= $this->session->userdata('username') ?></a></li>
+
                         <?php else : ?>
-                            <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masukk / Daftar</a></li>
+                            <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masuk / Daftar</a></li>
                         <?php endif; ?>
 
                     </ul>
@@ -61,6 +55,7 @@
                         <li><a href="<?php echo base_url() ?>penjadwalan" class="brown-text">Penjadwalan</a></li>
                         <li><a href="<?= base_url() ?>menu" class="brown-text">Menu</a></li>
                         <li><a href="#portfolio" class="brown-text">Forum</a></li>
+                        <li><a href="<?= base_url() ?>Auth/logout" class="brown-text">Logout</a></li>
                     </ul>
                 </div>
             </div>

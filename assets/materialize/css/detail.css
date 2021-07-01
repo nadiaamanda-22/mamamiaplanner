@@ -1,0 +1,39 @@
+.detail h3 {
+   font-family: 'Sulphur Point';
+}
+
+p  {
+   font-size: 18px;
+   text-align: center;
+   color: #aa5806;
+   margin-top: 20px;
+   margin-bottom: 50px;
+}
+
+.bahan ul li {
+   color: #aa5806;
+   font-size: 23px;
+}
+
+.cara ol li {
+   color: #aa5806;
+   font-size: 23px;
+   text-align: left;
+}
+
+.bahan h4,
+.cara h4 {
+   margin-top: 50px;
+}
+
+.link{
+   margin-top: 100px;
+}
+
+.link h4 {
+   font-family: 'Sulphur Point';
+   text-align: left;
+   font-size: 23px;
+   font-weight: bold;
+}
+

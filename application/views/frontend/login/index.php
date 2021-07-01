@@ -71,7 +71,16 @@
 
    <!--JavaScript at end of body for optimized loading-->
    <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/materialize.min.js"></script>
-
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <?php if ($this->session->flashdata('l_error')) : ?>
+      <script>
+         Swal.fire({
+            icon: 'error',
+            title: 'Email atau password salah !!',
+            text: 'Silahkan cek kembali',
+         })
+      </script>
+   <?php endif; ?>
 
 </body>
 

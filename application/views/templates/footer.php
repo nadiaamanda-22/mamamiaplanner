@@ -59,10 +59,17 @@
           M.Dropdown.init(dropdown);
 
           // yg kepake di menu
-          const slidemenu = document.querySelectorAll('.slider');
+          const slidemenu = document.querySelectorAll('.menu');
           M.Slidemenu.init(slidemenu, {
             indicators: false,
             height: 400
+          });
+
+          // yg kepake di detail
+          const slidedetail = document.querySelectorAll('.detail');
+          M.Slidedetail.init(slidedetail, {
+            indicators: false,
+            height: 200
           });
         </script>
 
