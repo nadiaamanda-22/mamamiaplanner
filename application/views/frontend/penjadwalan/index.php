@@ -3,15 +3,14 @@
     <head>
         
         <title>Mamamia Planner</title>
-        <link type="text/css" rel="stylesheet" href="<?php echo base_url()?>assets/materialize/css/penjadwalan.css" media="screen,projection"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="<?= base_url('assets/materialize/css/penjadwalan.css'); ?>">
     </head>
   <body>  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+ 
    <!-- sliders -->
-    <div class="slider">
+    <div class="slider mb-4">
         <ul class="slides">
         <li>
             <img src="<?php echo base_url()?>assets/img/slider/2.png"> <!-- random image -->
@@ -31,137 +30,103 @@
        </div>
      </div>
    </div>
-   <div class="container jadwal">
-     <div class="row center">
-       <div class="col m5 s12">
-          <div class="input-field col s12">
-            <select>
-              <option value="" disabled selected>Choose your option</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
-            </select>
-            <label>Materialize Select</label>
-        </div>
-       </div>
-       <div class="col m5 s12">
-          <div class="input-field col s12">
-            <select>
-              <option value="" disabled selected>Choose your option</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
-            </select>
-            <label>Materialize Select</label>
-        </div>
-       </div>
-       <div class="col m2 s12 cari">
-       <button class="btn brown waves-light" type="submit" name="action">
-         <i class="material-icons">search</i>
-       </button>
-       </div>
-     </div>
-   </div>
-
-   <!-- card -->
-   <div class="container">
-    <div class="row center">
-      <div class="col m3 s12">
-        <div class="card-panel white">
-        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="grey-text text-lighten-2"> <i class="material-icons center large">add_circle_outline</i>
-          </span></a>
-          <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-        </div>
-      </div>
-      <div class="col m3 s12">
-        <div class="card-panel white">
-        <a href=""><span class="grey-text text-lighten-2"> <i class="material-icons center large">add_circle_outline</i>
-          </span></a>
-        </div>
-      </div>
-      <div class="col m3 s12">
-        <div class="card-panel white">
-        <a href=""><span class="grey-text text-lighten-2"> <i class="material-icons center large">add_circle_outline</i>
-          </span></a>
-        </div>
-      </div>
-      <div class="col m3 s12">
-        <div class="card-panel white">
-        <a href=""><span class="grey-text text-lighten-2"> <i class="material-icons center large">add_circle_outline</i>
-          </span></a>
-        </div>
-      </div>
-    </div>
-  </div>
+  
+  <!-- Form -->
 
   <div class="container">
-    <div class="row center">
-      <div class="col m3 s12">
-        <div class="card-panel white">
-        <a href=""><span class="grey-text text-lighten-2"> <i class="material-icons center large">add_circle_outline</i>
-          </span></a>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+      </select>
+      </div>
+      <div class="col-md-4 mb-3">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="col-md-4 mt-1 mb-3 ">
+        <button type="button" class="btn btn-link brown"><i class="bi bi-search"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Akhir Form -->
+
+  <!-- Card -->
+  <div class="container penjadwalan1">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card kotak">
+          <div class="card-body text-center">
+            <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
+          </div>
         </div>
       </div>
-      <div class="col m3 s12">
-        <div class="card-panel white">
-        <a href=""><span class="grey-text text-lighten-2"> <i class="material-icons center large">add_circle_outline</i>
-          </span></a>
+      <div class="col-md-4">
+        <div class="card kotak">
+          <div class="card-body center">
+            <a href=""><i class="bi bi-plus-circle plus"></i></a>
+          </div>
         </div>
       </div>
-      <div class="col m3 s12">
-        <div class="card-panel white">
-          <a href=""><span class="grey-text text-lighten-2"> <i class="material-icons center large">add_circle_outline</i>
-          </span></a>
+      <div class="col-md-4">
+        <div class="card kotak">
+          <div class="card-body center">
+            <a href=""><i class="bi bi-plus-circle plus"></i></a>
+          </div>
         </div>
       </div>
-      <div class="col m3 s12">
-        <div class="card-panel white">
-         <a href=""><span class="grey-text text-lighten-2"> <i class="material-icons center large">navigate_next</i>
-          </span></a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card kotak">
+          <div class="card-body center">
+            <a href=""><i class="bi bi-plus-circle plus"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card kotak">
+          <div class="card-body center">
+            <a href=""><i class="bi bi-plus-circle plus"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card kotak">
+          <div class="card-body center">
+            <a href=""><span><i class="bi bi-plus-circle plus"></i></span></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- end -->
-  <!--JavaScript at end of body for optimized loading-->
-  <script>
-      document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-      });
+  <!-- Akhir Card -->
 
-  // Or with jQuery
 
-      $(document).ready(function(){
-        $('select').formSelect();
-      });
-  </script>
+   <!-- Modal Structure -->
+   <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 
-  <script>
-  var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
-  </script>
+
+  
+  
 
   </body>
 </html>

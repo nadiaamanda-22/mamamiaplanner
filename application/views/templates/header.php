@@ -4,6 +4,8 @@
 <head>
 
     <title>Mamamia Planner</title>
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -17,34 +19,41 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- flaticon -->
     <link href="<?php echo base_url() ?>assets/uicons/css/uicons-regular-rounded.css" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/menu.css'); ?>">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/menu.css'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
+<ul id="dropdown1" class="dropdown-content dropmenu" style="width:100%;">
+  <li><a href="#!">Profil</a></li>
+  <li class="divider"></li>
+  <li><a href="#!"><i class="fi-rr-sign-in"></i>Logout</a></li>
+</ul> 
     <!-- Navbar -->
     <div class="navbar-fixed">
         <nav class=" amber lighten-4">
-            <div class="container">
+            <div class="container" style="width:85%">
                 <div class="nav-wrapper ">
-                    <a href="#home" class="brand-logo responsive-img logobaru"><img src="<?php echo base_url() ?>assets/img/logo/logobaru.png" alt="">
-                        <span class="right brown-text">Mamamia Planner</span>
-                    </a>
+                <a class="navbar-brand" href="#">
+					<img
+						src="<?php echo base_url() ?>assets/img/logo/logobaru.png"
+						alt=""
+						width="30"
+						height="63"
+						class="d-inline-block align-text-center "
+					/>
+					<span>Mamamia Planner</span>
+				</a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons brown-text">menu</i></a>
                     <ul class=" right hide-on-med-and-down login">
                         <?php if ($this->session->userdata() != null) : ?>
-                            <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i><?= $this->session->userdata('username') ?></a></li>
+                            <li><a href="#!" class="brown-text dropdown-trigger" data-target="dropdown1"><i class=" material-icons left">account_circle</i><?= $this->session->userdata('username') ?></a></li>
                         <?php else : ?>
                             <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masukk / Daftar</a></li>
                         <?php endif; ?>
-
-                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-                        sagittis lacus vel augue laoreet rutrum faucibus.">
-                        Popover on bottom
-                        </button>
 
                     </ul>
                     <ul class="menu right hide-on-med-and-down">
