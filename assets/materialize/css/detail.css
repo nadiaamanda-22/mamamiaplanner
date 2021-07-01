@@ -2,6 +2,14 @@
    font-family: 'Sulphur Point';
 }
 
+p  {
+   font-size: 18px;
+   text-align: center;
+   color: #aa5806;
+   margin-top: 20px;
+   margin-bottom: 50px;
+}
+
 .bahan ul li {
    color: #aa5806;
    font-size: 23px;
@@ -28,3 +36,4 @@
    font-size: 23px;
    font-weight: bold;
 }
+

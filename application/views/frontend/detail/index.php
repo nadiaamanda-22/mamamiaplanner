@@ -4,7 +4,7 @@
 <div class="slider detail">
    <ul class="slides">
       <li>
-         <img src="<?= base_url('assets/img/menu/menu/menu1.jpeg'); ?>"> <!-- random image -->
+         <img src="<?= base_url('assets/img/menu/menu/menu1.jpeg'); ?>">
          <div class="caption center-align">
             <h3>Cara Pembuatan</h3>
          </div>
@@ -14,18 +14,26 @@
 
 <!-- Content -->
 <div class="container">
-   <h4>Ayam Woku</h4>
+   <!-- Nama Masakan -->
+   <h4 style="font-size: 47px;">Ayam Woku</h4>
+   <hr>
+   <!-- Keterangan -->
+   <p class="deskripsi">Ayam woku adalah olahan asal Manado. Ayam woku dibuat dengan berbagai macam bumbu. Masakan ini punya citrarasa gurih, pedas, dan aroma yang manis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat eos ullam fugit nihil saepe quae iusto quam molestias, similique dolorem minus reprehenderit quibusdam, soluta ab odit totam maxime nulla.</p>
 
    <!-- gambar -->
    <div class="woku" style="text-align: center;">
       <img src="<?= base_url('assets/img/detail/ayamwoku/a1.jpg') ?>">
       <img src="<?= base_url('assets/img/detail/ayamwoku/a3.jpg') ?>">
       <img src="<?= base_url('assets/img/detail/ayamwoku/a2.jpg') ?>">
+
+      <!-- Kalori -->
+      <h5 style="color: #aa5806;">Kalori : 90</h5>
    </div>
 
    <!-- Bahan2 -->
    <div class="bahan">
       <h4>Bahan-bahan</h4>
+      <hr>
       <ul>
          <li>- 1/2 ekor ayam ukuran kecil</li>
          <li>- 1 ruas jari kunyit</li>
@@ -48,6 +56,7 @@
    <!-- Cara Masak -->
    <div class="cara">
       <h4>Cara Membuat</h4>
+      <hr>
       <ol type="A">
          <li>Cuci bersih ayam. Sisihkan, kemudian haluskan/blender semua bumbu kecuali kemangi, daun-daunan, daun bawang dan bawang.</li>
          <li>Tumis semua bumbu halus, tambahkan daun jeruk, daun pandan dan daun kunyit serta sereh. Tumis hingga harum, tambahkan sedikit air agar tidak terlalu kental dan kering.</li>
