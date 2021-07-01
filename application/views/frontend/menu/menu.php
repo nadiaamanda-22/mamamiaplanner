@@ -1,7 +1,7 @@
    <!-- Menu -->
 
    <!-- Slider -->
-   <div class="slider">
+   <div class="slider menu">
       <ul class="slides">
          <li>
             <img src="<?= base_url('assets/img/menu/menu/menu1.jpeg'); ?>"> <!-- random image -->
@@ -36,7 +36,7 @@
                         <ul type="cirle">
                            <li> > <?= $value ?></li>
                         </ul>
-                     <?php endforeach; 
+                     <?php endforeach;
                      ?>
                   </div>
                </div>
