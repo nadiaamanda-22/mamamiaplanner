@@ -1,77 +1,66 @@
-  <!-- partial:partials/_sidebar.html -->
-  <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
-      <div class="mdc-drawer__header">
-          <a href="index.html" class="brand-logo">
-              <img src="../assets/images/logo.svg" alt="logo">
-          </a>
-      </div>
-      <div class="mdc-drawer__content">
-          <div class="user-info">
-              <p class="name"></p>
-              <p class="email"></p>
-          </div>
-          <div class="mdc-list-group">
-              <nav class="mdc-list mdc-drawer-menu">
-                  <div class="mdc-list-item mdc-drawer-item">
-                      <a class="mdc-drawer-link" href="index.html">
-                          <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
-                          Dashboard
-                      </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                      <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="ui-sub-menu">
-                          <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"></i>
-                          Manajemen Resep
-                      </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                      <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="ui-sub-menu">
-                          <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">person</i>
-                          Manajemen User
-                      </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                      <a class="mdc-drawer-link" href="pages/tables/basic-tables.html">
-                          <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"></i>
-                          Manajemen Bahan
-                      </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                      <a class="mdc-drawer-link" href="pages/charts/chartjs.html">
-                          <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"></i>
-                          Manajemen Jadwal
-                      </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                      <a class="mdc-drawer-link" href="pages/charts/chartjs.html">
-                          <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"></i>
-                          Manajemen Data Laporan
-                      </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                      <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="sample-page-submenu">
-                          <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"></i>
-                          Manajemen Request
-                      </a>
-                  </div>
-                <div class="mdc-list-item mdc-drawer-item">
-                      <a class="mdc-drawer-link" href="pages/charts/chartjs.html">
-                          <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"></i>
-                          Manajemen Forum
-                      </a>
-                </div>
-                <ul>
-          <div class="profile-actions">
-              <a href="javascript:;">Settings</a>
-              <span class="divider"></span>
-              <a href="javascript:;">Logout</a>
-          </div>
-          </ul>
-          <div>
-                <p class="mt-0 mb-1 ml-2 font-weight-bold tx-12"></p>
-                <p class="mt-0 mb-0 ml-2 tx-10"></p>
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>admin" aria-expanded="false">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html" aria-expanded="false">
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                                <span class="hide-menu">Manajemen Resep</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url()?>User" aria-expanded="false">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="hide-menu">Manajemen User</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="fontawesome.html" aria-expanded="false">
+                                <i class="fa fa-box-open" aria-hidden="true"></i>
+                                <span class="hide-menu">Manajemen Bahan</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="map-google.html" aria-expanded="false">
+                                <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+                                <span class="hide-menu">Manajemen Jadwal</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html" aria-expanded="false">
+                                <i class="fa fa-file-alt" aria-hidden="true"></i>
+                                <span class="hide-menu">Manajemen Data Laporan</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html" aria-expanded="false">
+                                <i class="fa fa-file" aria-hidden="true"></i>
+                                <span class="hide-menu">Manajemen Request</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html" aria-expanded="false">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <span class="hide-menu">Manajemen Forum</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item" style="text-align: center;">
+                                <a href="http://"><span class="hide-menu">Setting | </span></a>
+                                <a href="http://"><span class="hide-menu">Logout</span></a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
             </div>
-              <div>
-          </div>
-  </aside>
-  <!-- partial -->
+            <!-- End Sidebar scroll-->
+        </aside>
