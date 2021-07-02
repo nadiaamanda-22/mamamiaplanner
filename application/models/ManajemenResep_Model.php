@@ -13,4 +13,10 @@ class ManajemenResep_Model extends CI_Model{
         ]);
     }
 
+    public function B_getAllResep(){
+        $response = $this->_client->request('GET', 'resep/');
+        $result = json_decode($response->getBody()->getContents(), TRUE);
+        return $result;
+    }
+
 }

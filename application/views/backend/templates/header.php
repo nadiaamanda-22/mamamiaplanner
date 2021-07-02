@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="<?= base_url('assets/backend/assets/')   ?>plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/backend/assets/')   ?>css/style.min.css" rel="stylesheet">
+    
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 </head>
 
 <body>

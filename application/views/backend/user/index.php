@@ -29,7 +29,7 @@
                          </div>
                          <div class="row">
                              <div class="col">
-                                 <table class="table table-hover tableBarang mt-4">
+                                 <table class="table table-hover mt-4">
                                      <thead class="thead-light">
                                          <tr>
                                              <th scope="col">No</th>
@@ -104,3 +104,4 @@
          </div>
      </div>
  </div>
+ 

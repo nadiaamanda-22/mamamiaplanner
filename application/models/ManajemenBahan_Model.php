@@ -13,4 +13,11 @@ class ManajemenBahan_Model extends CI_Model{
         ]);
     }
 
+    public function B_getAllBahan(){
+        $response = $this->_client->request('GET', 'bahan/');
+        $result = json_decode($response->getBody()->getContents(), TRUE);
+
+        return $result;
+    }
+
 }

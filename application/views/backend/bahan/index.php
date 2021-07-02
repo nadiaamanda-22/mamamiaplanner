@@ -40,6 +40,18 @@
                                          </tr>
                                      </thead>
                                      <tbody>
+                                     <?php $i = 1; ?>
+                                         <?php foreach ($bahans as $bhn) : ?>
+                                             <tr>
+                                                 <th scope="row"><?= $i; ?></th>
+                                                 <td><?= $bhn['bahan'] ?></td>
+                                                 <td><?= $bhn['tbl_resep']['nama_resep']?></td>
+                                                 <td><?= $bhn['is_active'] ?></td>
+                                                 <td>
+                                                 </td>
+                                             </tr>
+                                             <?php $i++; ?>
+                                         <?php endforeach; ?>
                                      </tbody>
                                  </table>
                              </div>
