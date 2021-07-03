@@ -1,14 +1,14 @@
-        <aside class="left-sidebar" data-sidebarbg="skin6">
+        <aside class="left-sidebar" data-sidebarbg="skin6" style="background-color:#ffe082;">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
-                    <ul id="sidebarnav">
+                    <ul id="sidebarnav" style="background-color:#ffe082;">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>admin" aria-expanded="false">
                                 <i class="fa fa-home" aria-hidden="true"></i>
-                                <span class="hide-menu">Dashboard</span>
+                                <span class="hide-menu" style="color:#aa5806; font-weight:bold;">Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-item">

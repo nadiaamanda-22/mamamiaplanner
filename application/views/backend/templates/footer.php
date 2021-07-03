@@ -1,4 +1,4 @@
- <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a href="https://www.wrappixel.com/">wrappixel.com</a>
+ <footer class="footer text-center"> Copyright © Mamamia Planner 2021 <a href="https://www.wrappixel.com/"></a>
  </footer>
  <!-- ============================================================== -->
  <!-- End footer -->

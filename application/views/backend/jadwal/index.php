@@ -25,11 +25,11 @@
                  <div class="white-box">
                      <div class="row mb-4">
                          <div class="col-md-4">
-                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-plus"></i> Tambah Data Jadwal</button>
+                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#jadwalModal"><i class="fas fa-plus"></i> Tambah Data Jadwal</button>
                          </div>
                          <div class="row">
                              <div class="col">
-                                 <table class="table table-hover tableBarang mt-4">
+                                 <table class="table table-hover mt-4" id="tablejadwal">
                                      <thead class="thead-light">
                                          <tr>
                                              <th scope="col">No</th>
@@ -66,7 +66,7 @@
      <!-- ============================================================== -->
      <!-- footer -->
      <!-- ============================================================== -->
-     <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a href="https://www.wrappixel.com/">wrappixel.com</a>
+     <footer class="footer text-left"> Copyright © Mamamia Planner 2021 <a href="https://www.wrappixel.com/"></a>
      </footer>
      <!-- ============================================================== -->
      <!-- End footer -->
@@ -74,19 +74,19 @@
  </div>
 
  <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="jadwalModal" tabindex="-1" aria-labelledby="jadwalModalLabel" aria-hidden="true">
      <div class="modal-dialog">
          <div class="modal-content">
              <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                 <h5 class="modal-title" id="jadwalModalLabel">Tambah Data Jadwal</h5>
                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
              <div class="modal-body">
                  ...
              </div>
              <div class="modal-footer">
-                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                 <button type="button" class="btn btn-primary">Save changes</button>
+                 <button type="button" id="close_jadwal" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                 <button type="submit" id="submit_jadwal"class="btn btn-primary">Tambah Data</button>
              </div>
          </div>
      </div>

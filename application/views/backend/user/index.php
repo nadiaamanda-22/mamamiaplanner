@@ -25,11 +25,11 @@
                  <div class="white-box">
                      <div class="row mb-4">
                          <div class="col-md-4">
-                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-plus"></i> Tambah Data User</button>
+                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#userModal"><i class="fas fa-plus"></i> Tambah Data User</button>
                          </div>
                          <div class="row">
                              <div class="col">
-                                 <table class="table table-hover tableBarang mt-4">
+                                 <table class="table table-hover mt-4" id=" tableuser">
                                      <thead class="thead-light">
                                          <tr>
                                              <th scope="col">No</th>
@@ -79,7 +79,7 @@
      <!-- ============================================================== -->
      <!-- footer -->
      <!-- ============================================================== -->
-     <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a href="https://www.wrappixel.com/">wrappixel.com</a>
+     <footer class="footer text-left"> Copyright © Mamamia Planner 2021 <a href="https://www.wrappixel.com/"></a>
      </footer>
      <!-- ============================================================== -->
      <!-- End footer -->
@@ -87,19 +87,19 @@
  </div>
 
  <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
      <div class="modal-dialog">
          <div class="modal-content">
              <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                 <h5 class="modal-title" id="userModalLabel">Tambah Data User</h5>
                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
              <div class="modal-body">
                  ...
              </div>
              <div class="modal-footer">
-                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                 <button type="button" class="btn btn-primary">Save changes</button>
+                 <button type="button" id="cancel_user" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                 <button type="submit" i="submit_user" class="btn btn-primary">Tambah Data</button>
              </div>
          </div>
      </div>
