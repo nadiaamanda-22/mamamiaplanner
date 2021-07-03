@@ -29,7 +29,7 @@
                          </div>
                          <div class="row">
                              <div class="col">
-                                 <table class="table table-hover mt-4" id="tableResep">
+                                 <table class="table table-hover mt-4" id=" tableresep">
                                      <thead class="thead-light">
                                          <tr>
                                             <th scope="col">No</th>
@@ -41,19 +41,6 @@
                                          </tr>
                                      </thead>
                                      <tbody>
-                                     <?php $i = 1; ?>
-                                         <?php foreach ($reseps as $rsp) : ?>
-                                             <tr>
-                                                 <th scope="row"><?= $i; ?></th>
-                                                 <td><?= $rsp['nama_resep'] ?></td>
-                                                 <td><?= $rsp['deskripsi_resep'] ?></td>
-                                                 <td><?= $rsp['kalori'] ?></td>
-                                                 <td><?= $rsp['is_active'] ?></td>
-                                                 <td>
-                                                 </td>
-                                             </tr>
-                                             <?php $i++; ?>
-                                         <?php endforeach; ?>
                                      </tbody>
                                  </table>
                              </div>
@@ -79,7 +66,7 @@
      <!-- ============================================================== -->
      <!-- footer -->
      <!-- ============================================================== -->
-     <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a href="https://www.wrappixel.com/">wrappixel.com</a>
+     <footer class="footer text-left"> Copyright © Mamamia Planner 2021 <a href="https://www.wrappixel.com/"></a>
      </footer>
      <!-- ============================================================== -->
      <!-- End footer -->
