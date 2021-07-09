@@ -23,37 +23,37 @@
          <div class="row justify-content-center">
              <div class="col-lg-4 col-md-12">
                  <div class="white-box analytics-info">
-                     <h3 class="box-title">Total Visit</h3>
+                     <h3 class="box-title">Jumlah Menu</h3>
                      <ul class="list-inline two-part d-flex align-items-center mb-0">
                          <li>
                              <div id="sparklinedash"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                              </div>
                          </li>
-                         <li class="ms-auto"><span class="counter text-success">659</span></li>
+                         <li class="ms-auto"><span class="counter text-success total_menu"></span></li>
                      </ul>
                  </div>
              </div>
              <div class="col-lg-4 col-md-12">
                  <div class="white-box analytics-info">
-                     <h3 class="box-title">Total Page Views</h3>
+                     <h3 class="box-title">Jumlah User</h3>
                      <ul class="list-inline two-part d-flex align-items-center mb-0">
                          <li>
                              <div id="sparklinedash2"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                              </div>
                          </li>
-                         <li class="ms-auto"><span class="counter text-purple">869</span></li>
+                         <li class="ms-auto"><span class="counter text-purple total_user">869 Akun Terdaftar</span></li>
                      </ul>
                  </div>
              </div>
              <div class="col-lg-4 col-md-12">
                  <div class="white-box analytics-info">
-                     <h3 class="box-title">Unique Visitor</h3>
+                     <h3 class="box-title">Menu Favorit</h3>
                      <ul class="list-inline two-part d-flex align-items-center mb-0">
                          <li>
                              <div id="sparklinedash3"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                              </div>
                          </li>
-                         <li class="ms-auto"><span class="counter text-info">911</span>
+                         <li class="ms-auto"><span class="counter text-info menu_favorit">911 Menu Favorit</span>
                          </li>
                      </ul>
                  </div>
@@ -62,7 +62,7 @@
          <!-- ============================================================== -->
          <!-- PRODUCTS YEARLY SALES -->
          <!-- ============================================================== -->
-         <div class="row">
+         <!-- <div class="row">
              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                  <div class="white-box">
                      <h3 class="box-title">Products Yearly Sales</h3>
@@ -82,11 +82,11 @@
                      </div>
                  </div>
              </div>
-         </div>
+         </div> -->
          <!-- ============================================================== -->
          <!-- RECENT SALES -->
          <!-- ============================================================== -->
-         <div class="row">
+         <!-- <div class="row">
              <div class="col-md-12 col-lg-12 col-sm-12">
                  <div class="white-box">
                      <div class="d-md-flex mb-3">
@@ -167,21 +167,21 @@
                      </div>
                  </div>
              </div>
-         </div>
+         </div> -->
          <!-- ============================================================== -->
          <!-- Recent Comments -->
          <!-- ============================================================== -->
-         <div class="row">
+         <!-- <div class="row">
              <!-- .col -->
-             <div class="col-md-12 col-lg-8 col-sm-12">
+         <!-- <div class="col-md-12 col-lg-8 col-sm-12">
                  <div class="card white-box p-0">
                      <div class="card-body">
                          <h3 class="box-title mb-0">Recent Comments</h3>
                      </div>
                      <div class="comment-widgets">
                          <!-- Comment Row -->
-                         <div class="d-flex flex-row comment-row p-3 mt-0">
-                             <div class="p-2"><img src="plugins/images/users/varun.jpg" alt="user" width="50" class="rounded-circle"></div>
+         <!-- <div class="d-flex flex-row comment-row p-3 mt-0">
+                             <div class="p-2"><img src="<?= base_url('assets/backend/assets/') ?>plugins/images/users/varun.jpg" alt="user" width="50" class="rounded-circle"></div>
                              <div class="comment-text ps-2 ps-md-3 w-100">
                                  <h5 class="font-medium">James Anderson</h5>
                                  <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry.It has survived not only five centuries. </span>
@@ -191,10 +191,10 @@
                                      <div class="text-muted fs-2 ms-auto mt-2 mt-md-0">April 14, 2021</div>
                                  </div>
                              </div>
-                         </div>
-                         <!-- Comment Row -->
-                         <div class="d-flex flex-row comment-row p-3">
-                             <div class="p-2"><img src="plugins/images/users/genu.jpg" alt="user" width="50" class="rounded-circle"></div>
+                         </div> -->
+         <!-- Comment Row -->
+         <!-- <div class="d-flex flex-row comment-row p-3">
+                             <div class="p-2"><img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/users/genu.jpg" alt="user" width="50" class="rounded-circle"></div>
                              <div class="comment-text ps-2 ps-md-3 active w-100">
                                  <h5 class="font-medium">Michael Jorden</h5>
                                  <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry.It has survived not only five centuries. </span>
@@ -205,10 +205,10 @@
                                      <div class="text-muted fs-2 ms-auto mt-2 mt-md-0">April 14, 2021</div>
                                  </div>
                              </div>
-                         </div>
-                         <!-- Comment Row -->
-                         <div class="d-flex flex-row comment-row p-3">
-                             <div class="p-2"><img src="plugins/images/users/ritesh.jpg" alt="user" width="50" class="rounded-circle"></div>
+                         </div> -->
+         <!-- Comment Row -->
+         <!-- <div class="d-flex flex-row comment-row p-3">
+                             <div class="p-2"><img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/users/ritesh.jpg" alt="user" width="50" class="rounded-circle"></div>
                              <div class="comment-text ps-2 ps-md-3 w-100">
                                  <h5 class="font-medium">Johnathan Doeting</h5>
                                  <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry.It has survived not only five centuries. </span>
@@ -221,8 +221,8 @@
                              </div>
                          </div>
                      </div>
-                 </div>
-             </div>
+                 </div> -->
+         <!-- </div>
              <div class="col-lg-4 col-md-12 col-sm-12">
                  <div class="card white-box p-0">
                      <div class="card-heading">
@@ -239,7 +239,7 @@
                                          <i class="far fa-comments text-white"></i>
                                      </button>
                                  </div>
-                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle">
+                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/users/varun.jpg" alt="user-img" class="img-circle">
                                      <div class="ms-2">
                                          <span class="text-dark">Varun Dhavan <small class="d-block text-success d-block">online</small></span>
                                      </div>
@@ -254,7 +254,7 @@
                                          <i class="far fa-comments text-white"></i>
                                      </button>
                                  </div>
-                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="plugins/images/users/genu.jpg" alt="user-img" class="img-circle">
+                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/users/genu.jpg" alt="user-img" class="img-circle">
                                      <div class="ms-2">
                                          <span class="text-dark">Genelia
                                              Deshmukh <small class="d-block text-warning">Away</small></span>
@@ -270,7 +270,7 @@
                                          <i class="far fa-comments text-white"></i>
                                      </button>
                                  </div>
-                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle">
+                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle">
                                      <div class="ms-2">
                                          <span class="text-dark">Ritesh
                                              Deshmukh <small class="d-block text-danger">Busy</small></span>
@@ -286,7 +286,7 @@
                                          <i class="far fa-comments text-white"></i>
                                      </button>
                                  </div>
-                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="plugins/images/users/arijit.jpg" alt="user-img" class="img-circle">
+                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/users/arijit.jpg" alt="user-img" class="img-circle">
                                      <div class="ms-2">
                                          <span class="text-dark">Arijit
                                              Sinh <small class="d-block text-muted">Offline</small></span>
@@ -302,7 +302,7 @@
                                          <i class="far fa-comments text-white"></i>
                                      </button>
                                  </div>
-                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="plugins/images/users/govinda.jpg" alt="user-img" class="img-circle">
+                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/users/govinda.jpg" alt="user-img" class="img-circle">
                                      <div class="ms-2">
                                          <span class="text-dark">Govinda
                                              Star <small class="d-block text-success">online</small></span>
@@ -318,7 +318,7 @@
                                          <i class="far fa-comments text-white"></i>
                                      </button>
                                  </div>
-                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="plugins/images/users/hritik.jpg" alt="user-img" class="img-circle">
+                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/users/hritik.jpg" alt="user-img" class="img-circle">
                                      <div class="ms-2">
                                          <span class="text-dark">John
                                              Abraham<small class="d-block text-success">online</small></span>
@@ -328,9 +328,9 @@
                          </ul>
                      </div>
                  </div>
-             </div>
-             <!-- /.col -->
-         </div>
+             </div> -->
+         <!-- /.col -->
+         <!-- </div> -->
      </div>
      <!-- ============================================================== -->
      <!-- End Container fluid  -->
@@ -338,9 +338,9 @@
      <!-- ============================================================== -->
      <!-- footer -->
      <!-- ============================================================== -->
-     <footer class="footer text-left"> Copyright © Mamamia Planner 2021 <a href="https://www.wrappixel.com/"></a>
      </footer>
      <!-- ============================================================== -->
      <!-- End footer -->
      <!-- ============================================================== -->
  </div>
+ <script src="<?= base_url() ?>js/B_dashboard.js"></script>

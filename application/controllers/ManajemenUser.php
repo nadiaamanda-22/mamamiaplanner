@@ -1,6 +1,6 @@
 <?php
 
-class User extends CI_Controller
+class ManajemenUser extends CI_Controller
 {
     public function __construct()
     {
@@ -12,8 +12,8 @@ class User extends CI_Controller
     {
         $data['title'] = 'Manajemen User';
 
-        $data['results'] = $this->User_Model->B_getAllUser();
-        $data['users'] = $data['results']['data'];
+        // // $data['results'] = $this->User_Model->B_getAllUser();
+        // $data['users'] = $data['results']['data'];
 
         $this->load->view('backend/templates/header.php', $data);
         $this->load->view('backend/templates/sidebar');

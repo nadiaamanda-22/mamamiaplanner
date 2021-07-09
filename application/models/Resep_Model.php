@@ -15,7 +15,7 @@ class Resep_Model extends CI_Model
 
     public function F_getAllResep()
     {
-        $response = $this->_client->request('GET', 'resep/');
+        $response = $this->_client->request('GET', 'resep/s');
         $result = json_decode($response->getBody()->getContents(), TRUE);
 
         return $result;
@@ -23,22 +23,9 @@ class Resep_Model extends CI_Model
 
     public function F_getResepByID($id_resep)
     {
-        $response = $this->_client->request('GET', 'resep/' . $id_resep);
+        $response = $this->_client->request('GET', 'resep/s/' . $id_resep);
         $result = json_decode($response->getBody()->getContents(), TRUE);
         return $result;
     }
 
-    public function F_getBahanByID($id_resep)
-    {
-        $response = $this->_client->request('GET', 'bahan/r/' . $id_resep);
-        $result = json_decode($response->getBody()->getContents(), TRUE);
-        return $result;
-    }
-
-    public function F_getCaraMasakByID($id_resep)
-    {
-        $response = $this->_client->request('GET', 'masak/r/' . $id_resep);
-        $result = json_decode($response->getBody()->getContents(), TRUE);
-        return $result;
-    }
 }

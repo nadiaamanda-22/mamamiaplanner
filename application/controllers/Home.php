@@ -3,6 +3,12 @@
     public function __construct()
     {
         parent::__construct();
+        if (!$this->session->userdata('token')) {
+            $allowed = ['index'];
+            if (!in_array($this->router->fetch_method(), $allowed)) {
+                redirect('auth');
+            }
+        }
     }
         public function index (){
         $this->load->view('templates/header');

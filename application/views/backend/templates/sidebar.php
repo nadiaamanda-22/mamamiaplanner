@@ -14,48 +14,54 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenResep" aria-expanded="false">
                                 <i class="fa fa-book" aria-hidden="true"></i>
-                                <span class="hide-menu">Manajemen Resep</span>
+                                <span class="hide-menu">Resep</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url()?>User" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenUser" aria-expanded="false">
                                 <i class="fa fa-user" aria-hidden="true"></i>
-                                <span class="hide-menu">Manajemen User</span>
+                                <span class="hide-menu">User</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url()?>ManajemenBahan" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenBahan" aria-expanded="false">
                                 <i class="fa fa-box-open" aria-hidden="true"></i>
-                                <span class="hide-menu">Manajemen Bahan</span>
+                                <span class="hide-menu">Bahan</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url()?>ManajemenJadwal" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenLangkahMasak" aria-expanded="false">
+                                <i class="fa fa-list-ol" aria-hidden="true"></i>
+                                <span class="hide-menu">Langkah Memasak</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenJadwal" aria-expanded="false">
                                 <i class="fa fa-calendar-alt" aria-hidden="true"></i>
-                                <span class="hide-menu">Manajemen Jadwal</span>
+                                <span class="hide-menu">Jadwal</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url()?>ManajemenDataLaporan" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenDataLaporan" aria-expanded="false">
                                 <i class="fa fa-file-alt" aria-hidden="true"></i>
-                                <span class="hide-menu">Manajemen Data Laporan</span>
+                                <span class="hide-menu">Data Laporan</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url()?>ManajemenRequest" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenRequest" aria-expanded="false">
                                 <i class="fa fa-file" aria-hidden="true"></i>
-                                <span class="hide-menu">Manajemen Request</span>
+                                <span class="hide-menu">Request</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url()?>ManajemenForum" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenForum" aria-expanded="false">
                                 <i class="fa fa-users" aria-hidden="true"></i>
-                                <span class="hide-menu">Manajemen Forum</span>
+                                <span class="hide-menu">Forum</span>
                             </a>
                         </li>
                         <li class="sidebar-item" style="text-align: center;">
-                                <a href="http://"><span class="hide-menu">Setting | </span></a>
-                                <a href="http://"><span class="hide-menu">Logout</span></a>
+                            <a href="http://"><span class="hide-menu">Setting | </span></a>
+                            <a href="<?= base_url()        ?>Auth/logout"><span class="hide-menu">Logout</span></a>
                         </li>
                     </ul>
 
@@ -64,3 +70,5 @@
             </div>
             <!-- End Sidebar scroll-->
         </aside>
+        <script>
+        </script>

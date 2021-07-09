@@ -40,7 +40,7 @@ class Auth extends CI_controller
                     redirect('home');
                 }
             } else {
-                $this->session->set_flashdata('l_error', 'Email atau password salah !!');
+                $this->session->set_flashdata('l_error', $result['error']);
                 $this->load->view('frontend/login/index');
             }
         }
@@ -59,7 +59,7 @@ class Auth extends CI_controller
             $data = [
                 'username' => $this->input->post('username'),
                 'email_user' => $this->input->post('email'),
-                'password_user' => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
+                'password_user' => md5($this->input->post('password')),
                 'full_name' => 'mamamia-' . uniqid(),
                 'foto_user' => 'default.jpg',
                 'role_id' => 12,

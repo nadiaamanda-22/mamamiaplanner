@@ -10,13 +10,13 @@
                         <!-- Logo icon -->
                         <b class="logo-icon">
                             <!-- Dark Logo icon -->
-                            <img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/logo-icon.png" alt="homepage" />
+                            <img src="<?= base_url('assets/img/logo/') ?>logobaru-removebg-preview.png" style="width: 80px; max-width: 100%; display:block;  height: auto;" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
                         <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/logo-text.png" alt="homepage" />
+                            <img src="" />
                         </span>
                     </a>
                     <!-- ============================================================== -->

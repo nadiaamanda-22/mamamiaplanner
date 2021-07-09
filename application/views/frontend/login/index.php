@@ -76,7 +76,7 @@
       <script>
          Swal.fire({
             icon: 'error',
-            title: 'Email atau password salah !!',
+            title: '<?= $this->session->flashdata('l_error')  ?>',
             text: 'Silahkan cek kembali',
          })
       </script>

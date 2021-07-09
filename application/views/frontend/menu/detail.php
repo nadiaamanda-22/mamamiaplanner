@@ -31,7 +31,7 @@
       <h4>Bahan-bahan</h4>
       <hr>
       <ul>
-         <?php foreach ($bahan as $b) : ?>
+         <?php foreach ($resep['tbl_bahans'] as $b) : ?>
             <li>- <?= $b['bahan'] ?></li>
          <?php endforeach; ?>
       </ul>
@@ -41,8 +41,8 @@
    <div class="cara">
       <h4>Cara Membuat</h4>
       <hr>
-      <ol type="A">
-         <?php foreach ($masak as $m) : ?>
+      <ol type="1">
+         <?php foreach ($resep['tbl_langkah_masaks'] as $m) : ?>
             <li><?= $m['langkah_masak'] ?></li>
          <?php endforeach; ?>
       </ol>

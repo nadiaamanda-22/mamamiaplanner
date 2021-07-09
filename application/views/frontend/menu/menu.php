@@ -15,26 +15,25 @@
    <div class="container">
       <h4 class="judul-menu"><?= $result['total_data'] ?> Menu Tersedia</h4>
       <div class="row">
-         <?php foreach ($resep as $r) : ?>
+         <?php foreach ($reseps as $resep) : ?>
             <div class="col m4 s12">
                <div class="card menu">
                   <div class="card-image waves-effect waves-block waves-light">
-                     <img class="activator responsive-img" src="http://localhost:3000/<?= $r['gambar_resep']  ?>">
+                     <img class="activator responsive-img" src="http://localhost:3000/<?= $resep['gambar_resep']  ?>">
                   </div>
                   <div class="card-content">
-                     <span class="card-title activator" style="font-weight: bold;"><?= $r['nama_resep'] ?>
+                     <span class="card-title activator" style="font-weight: bold;"><?= $resep['nama_resep'] ?>
                         <i class="material-icons right">more_vert</i>
                      </span>
                      <hr>
-                     <p><button><a href="<?= base_url() ?>Menu/details/<?= $r['id_resep'] ?>">Detail</a></button></p>
+                     <p><button><a href="<?= base_url() ?>Menu/details/<?= $resep['id_resep'] ?>">Detail</a></button></p>
                   </div>
                   <div class="card-reveal">
-                     <span class="card-title grey-text text-darken-4"><?= $r['nama_resep'] ?><i class="material-icons right">close</i></span>
+                     <span class="card-title grey-text text-darken-4"><?= $resep['nama_resep'] ?><i class="material-icons right">close</i></span>
                      <p>Bahan :</p>
-                     <?php $bahan = explode(',', $r['bahan']); ?>
-                     <?php foreach ($bahan as $key => $value) : ?>
+                     <?php foreach ($resep['tbl_bahans'] as $key) : ?>
                         <ul type="cirle">
-                           <li> > <?= $value ?></li>
+                           <li> > <?= $key['bahan'] ?></li>
                         </ul>
                      <?php endforeach;
                      ?>
