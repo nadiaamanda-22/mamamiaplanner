@@ -6,7 +6,7 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="dashboard.html" style="background-color:#ffe082;">
+                    <a class="navbar-brand" href="dashboard.html" style="background-color:#ffecb3;">
                         <!-- Logo icon -->
                         <b class="logo-icon">
                             <!-- Dark Logo icon -->
@@ -30,7 +30,7 @@
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
-                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5" style="background-color:#90caf9;">
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5" style="background-color:#e4e4e4;">
 
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->

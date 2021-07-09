@@ -24,9 +24,10 @@
              <div class="col-lg-4 col-md-12">
                  <div class="white-box analytics-info">
                      <h3 class="box-title">Jumlah Menu</h3>
+                     <h3 class="box-title">100 Menu Tersedia</h3>
                      <ul class="list-inline two-part d-flex align-items-center mb-0">
                          <li>
-                             <div id="sparklinedash"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                             <div>
                              </div>
                          </li>
                          <li class="ms-auto"><span class="counter text-success total_menu"></span></li>
@@ -36,9 +37,10 @@
              <div class="col-lg-4 col-md-12">
                  <div class="white-box analytics-info">
                      <h3 class="box-title">Jumlah User</h3>
+                     <h3 class="box-title">24 Akun Terdaftar</h3>
                      <ul class="list-inline two-part d-flex align-items-center mb-0">
                          <li>
-                             <div id="sparklinedash2"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                             <div>
                              </div>
                          </li>
                          <li class="ms-auto"><span class="counter text-purple total_user">869 Akun Terdaftar</span></li>
@@ -48,9 +50,10 @@
              <div class="col-lg-4 col-md-12">
                  <div class="white-box analytics-info">
                      <h3 class="box-title">Menu Favorit</h3>
+                     <h3 class="box-title">40 Menu Favorit</h3>
                      <ul class="list-inline two-part d-flex align-items-center mb-0">
                          <li>
-                             <div id="sparklinedash3"><canvas width="67" height="30" style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                             <div>
                              </div>
                          </li>
                          <li class="ms-auto"><span class="counter text-info menu_favorit">911 Menu Favorit</span>
@@ -240,6 +243,7 @@
                                      </button>
                                  </div>
                                  <a href="javascript:void(0)" class="d-flex align-items-center"><img src="<?= base_url('assets/backend/assets/')   ?>plugins/images/users/varun.jpg" alt="user-img" class="img-circle">
+                                 <a href="javascript:void(0)" class="d-flex align-items-center"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle">
                                      <div class="ms-2">
                                          <span class="text-dark">Varun Dhavan <small class="d-block text-success d-block">online</small></span>
                                      </div>
@@ -328,9 +332,6 @@
                          </ul>
                      </div>
                  </div>
-             </div> -->
-         <!-- /.col -->
-         <!-- </div> -->
      </div>
      <!-- ============================================================== -->
      <!-- End Container fluid  -->
@@ -338,6 +339,7 @@
      <!-- ============================================================== -->
      <!-- footer -->
      <!-- ============================================================== -->
+     <footer class="footer text-left" style="color:#aa5806; font weight:bold;"> Copyright © Mamamia Planner 2021 <a href="https://www.wrappixel.com/"></a>
      </footer>
      <!-- ============================================================== -->
      <!-- End footer -->
