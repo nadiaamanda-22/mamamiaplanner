@@ -65,7 +65,7 @@
      <!-- ============================================================== -->
      <!-- footer -->
      <!-- ============================================================== -->
-     <footer class="footer text-left"> Copyright © Mamamia Planner 2021 <a href="https://www.wrappixel.com/"></a>
+     <footer class="footer text-left" style="color:#aa5806; font weight:bold;"> Copyright © Mamamia Planner 2021 <a href="https://www.wrappixel.com/"></a>
      </footer>
      <!-- ============================================================== -->
      <!-- End footer -->
