@@ -1,4 +1,4 @@
- <div class="page-wrapper">
+<div class="page-wrapper">
      <!-- ============================================================== -->
      <!-- Bread crumb and right sidebar toggle -->
      <!-- ============================================================== -->
@@ -25,30 +25,28 @@
                  <div class="white-box">
                      <div class="row mb-4">
                          <div class="col-md-4">
-                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-plus"></i> Tambah Data User</button>
+                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-plus"></i> Tambah Data Bahan</button>
                          </div>
                          <div class="row">
                              <div class="col">
-                                 <table class="table table-hover mt-4">
+                                 <table class="table table-hover tableBarang mt-4">
                                      <thead class="thead-light">
                                          <tr>
                                              <th scope="col">No</th>
-                                             <th scope="col">Username</th>
-                                             <th scope="col">Fullname</th>
-                                             <th scope="col">Email</th>
+                                             <th scope="col">Nama Bahan</th>
+                                             <th scope="col">Nama Resep</th>
                                              <th scope="col">Status</th>
                                              <th scope="col">Action</th>
                                          </tr>
                                      </thead>
                                      <tbody>
-                                         <?php $i = 1; ?>
-                                         <?php foreach ($users as $usr) : ?>
+                                     <?php $i = 1; ?>
+                                         <?php foreach ($bahans as $bhn) : ?>
                                              <tr>
                                                  <th scope="row"><?= $i; ?></th>
-                                                 <td><?= $usr['username'] ?></td>
-                                                 <td><?= $usr['full_name'] ?></td>
-                                                 <td><?= $usr['email_user'] ?></td>
-                                                 <td><?= $usr['is_active'] ?></td>
+                                                 <td><?= $bhn['bahan'] ?></td>
+                                                 <td><?= $bhn['tbl_resep']['nama_resep']?></td>
+                                                 <td><?= $bhn['is_active'] ?></td>
                                                  <td>
                                                  </td>
                                              </tr>
@@ -104,4 +102,3 @@
          </div>
      </div>
  </div>
- 

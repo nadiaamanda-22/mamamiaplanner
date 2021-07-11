@@ -1,4 +1,4 @@
- <div class="page-wrapper">
+<div class="page-wrapper">
      <!-- ============================================================== -->
      <!-- Bread crumb and right sidebar toggle -->
      <!-- ============================================================== -->
@@ -25,30 +25,30 @@
                  <div class="white-box">
                      <div class="row mb-4">
                          <div class="col-md-4">
-                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-plus"></i> Tambah Data User</button>
+                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#resepModal"><i class="fas fa-plus"></i> Tambah Data Resep</button>
                          </div>
                          <div class="row">
                              <div class="col">
-                                 <table class="table table-hover mt-4">
+                                 <table class="table table-hover mt-4" id="tableResep">
                                      <thead class="thead-light">
                                          <tr>
-                                             <th scope="col">No</th>
-                                             <th scope="col">Username</th>
-                                             <th scope="col">Fullname</th>
-                                             <th scope="col">Email</th>
+                                            <th scope="col">No</th>
+                                             <th scope="col">Nama Resep</th>
+                                             <th scope="col">Deskripsi</th>
+                                             <th scope="col">Kalori</th>
                                              <th scope="col">Status</th>
                                              <th scope="col">Action</th>
                                          </tr>
                                      </thead>
                                      <tbody>
-                                         <?php $i = 1; ?>
-                                         <?php foreach ($users as $usr) : ?>
+                                     <?php $i = 1; ?>
+                                         <?php foreach ($reseps as $rsp) : ?>
                                              <tr>
                                                  <th scope="row"><?= $i; ?></th>
-                                                 <td><?= $usr['username'] ?></td>
-                                                 <td><?= $usr['full_name'] ?></td>
-                                                 <td><?= $usr['email_user'] ?></td>
-                                                 <td><?= $usr['is_active'] ?></td>
+                                                 <td><?= $rsp['nama_resep'] ?></td>
+                                                 <td><?= $rsp['deskripsi_resep'] ?></td>
+                                                 <td><?= $rsp['kalori'] ?></td>
+                                                 <td><?= $rsp['is_active'] ?></td>
                                                  <td>
                                                  </td>
                                              </tr>
@@ -87,21 +87,20 @@
  </div>
 
  <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="resepModal" tabindex="-1" aria-labelledby="resepModalLabel" aria-hidden="true">
      <div class="modal-dialog">
          <div class="modal-content">
              <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                 <h5 class="modal-title" id="resepModalLabel">Tambah Data Resep</h5>
                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
              <div class="modal-body">
                  ...
              </div>
              <div class="modal-footer">
-                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                 <button type="button" class="btn btn-primary">Save changes</button>
+                 <button type="button" id="cancel_resep" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                 <button type="submit" id="submit_resep" class="btn btn-primary">Tambah Data</button>
              </div>
          </div>
      </div>
  </div>
- 

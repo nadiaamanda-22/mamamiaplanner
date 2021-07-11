@@ -1,4 +1,4 @@
- <div class="page-wrapper">
+<div class="page-wrapper">
      <!-- ============================================================== -->
      <!-- Bread crumb and right sidebar toggle -->
      <!-- ============================================================== -->
@@ -25,11 +25,11 @@
                  <div class="white-box">
                      <div class="row mb-4">
                          <div class="col-md-4">
-                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-plus"></i> Tambah Data User</button>
+                             <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-plus"></i> Tambah Request</button>
                          </div>
                          <div class="row">
                              <div class="col">
-                                 <table class="table table-hover mt-4">
+                                 <table class="table table-hover tableBarang mt-4">
                                      <thead class="thead-light">
                                          <tr>
                                              <th scope="col">No</th>
@@ -41,19 +41,6 @@
                                          </tr>
                                      </thead>
                                      <tbody>
-                                         <?php $i = 1; ?>
-                                         <?php foreach ($users as $usr) : ?>
-                                             <tr>
-                                                 <th scope="row"><?= $i; ?></th>
-                                                 <td><?= $usr['username'] ?></td>
-                                                 <td><?= $usr['full_name'] ?></td>
-                                                 <td><?= $usr['email_user'] ?></td>
-                                                 <td><?= $usr['is_active'] ?></td>
-                                                 <td>
-                                                 </td>
-                                             </tr>
-                                             <?php $i++; ?>
-                                         <?php endforeach; ?>
                                      </tbody>
                                  </table>
                              </div>
@@ -104,4 +91,3 @@
          </div>
      </div>
  </div>
- 
