@@ -18,8 +18,8 @@
 
       <!-- ubah poto profil -->
       <div class="custom-file" style="width:300px; margin-top:20px; margin-bottom:50px;">
-         <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile" required>
-         <label class="custom-file-label" for="validatedInputGroupCustomFile">Ubah Poto Profil</label>
+         <input type="file" class="custom-file-input" id="foto_user" name="foto_user" required>
+         <label class="custom-file-label" for="foto_user">Ubah Poto Profil</label>
       </div>
    </div>
 

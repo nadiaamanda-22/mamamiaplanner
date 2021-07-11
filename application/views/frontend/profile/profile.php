@@ -12,13 +12,12 @@
       font-family: 'Sulphur Point';
       font-size: 30px;
       margin-top: 80px;
-      /* color: #aa5806; */
    }
 
-   .profil p {
+   .profil .lead {
       font-family: 'Poppins';
       margin-top: -5px;
-      margin-right: 200px;
+      margin-right: 250px;
       color: gray;
       font-size: 20px;
    }
@@ -32,9 +31,8 @@
    }
 
    .grss {
-      margin-left: 200px;
-      margin-top: 50px;
-      width: 1090px;
+      width: 80%;
+      margin: 50px auto;
    }
 </style>
 <!-- End CSS -->
@@ -75,19 +73,19 @@
       <!-- postingan -->
       <div class="row">
          <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
+            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
          </div>
 
          <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
+            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
          </div>
 
          <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
+            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
          </div>
 
          <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
+            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
          </div>
 
       </div>

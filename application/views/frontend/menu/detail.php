@@ -6,7 +6,7 @@
       <li>
          <img src="<?= base_url('assets/img/menu/menu/menu1.jpeg'); ?>">
          <div class="caption center-align">
-            <h3>Cara Pembuatan</h3>
+            <h3 class="white-text judul" style="font-weight: normal;">Cara Pembuatan</h3>
          </div>
       </li>
    </ul>
@@ -14,10 +14,10 @@
 <!-- Content -->
 <div class="container">
    <!-- Nama Masakan -->
-   <h4 style="font-size: 47px;"><?= $resep['nama_resep'] ?></h4>
-   <hr>
+   <h4 style="font-size: 35px;"><?= $resep['nama_resep'] ?></h4>
+
    <!-- Keterangan -->
-   <p class="deskripsi"><?= $resep['deskripsi_resep'] ?></p>
+   <p class=" deskripsi"><?= $resep['deskripsi_resep'] ?></p>
 
    <!-- gambar -->
    <div class="woku" style="text-align: center;">
@@ -28,8 +28,8 @@
 
    <!-- Bahan2 -->
    <div class="bahan">
-      <h4>Bahan-bahan</h4>
-      <hr>
+      <h4 style="font-size: 35px;">Bahan-bahan</h4>
+
       <ul>
          <?php foreach ($bahan as $b) : ?>
             <li>- <?= $b['bahan'] ?></li>
@@ -39,8 +39,8 @@
 
    <!-- Cara Masak -->
    <div class="cara">
-      <h4>Cara Membuat</h4>
-      <hr>
+      <h4 style="font-size: 35px;">Cara Membuat</h4>
+
       <ol type="A">
          <?php foreach ($masak as $m) : ?>
             <li><?= $m['langkah_masak'] ?></li>
@@ -65,7 +65,7 @@
             <h5><?= $resep['nama_resep'] ?></h5>
          </div>
          <div class="card-action">
-            <a href="<?= $resep['link_youtube'] ?>" class="waves-effect waves-light btn" target="_blank" style="background-color: #aa5806;">Lihat Di YouTube</a>
+            <a href="<?= $resep['link_youtube'] ?>" class="waves-effect waves-light btn" target="_blank" style="background-color: #aa5806; color:white;">Lihat Di YouTube</a>
          </div>
       </div>
    </div>

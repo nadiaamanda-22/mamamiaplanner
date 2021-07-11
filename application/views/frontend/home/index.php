@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="quotes">
-                                        <p class="center quotes">"All is well"</p>
+                                        <p class="center quotes">"all is well"</p>
                                     </div>
 
                                     <div class="team center">
@@ -96,7 +96,7 @@
                                     </div>
 
                                     <div class="team center">
-                                        <img src="<?php echo base_url() ?>assets/img/team/nadia.jpg" alt="">
+                                        <img src="<?php echo base_url() ?>assets/img/team/ali.jpeg" alt="">
                                         <div class="name">
                                             <span>Muhamad Aliwafa</span>
                                             <p>Service Developer</p>
@@ -106,27 +106,98 @@
 
                                 <div class="swiper-slide">
                                     <div class="quotes">
-                                        <p class="center quotes">"Gada, Biasa aja"</p>
+                                        <p class="center quotes">"The Bigger They Are, The Harder They Fall"</p>
                                     </div>
 
                                     <div class="team center">
                                         <img src="<?php echo base_url() ?>assets/img/team/rapi.jpg" alt="">
                                         <div class="name">
-                                            <span>Muhamad Aliwafa</span>
-                                            <p>Service Developer</p>
+                                            <span>Muhammad Rafi Pakpahan</span>
+                                            <p>UI/UX Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="quotes">
+                                        <p class="center quotes">"Stop trying to be liked by everybody, you don't even like everybody"</p>
+                                    </div>
+
+                                    <div class="team center">
+                                        <img src="<?php echo base_url() ?>assets/img/team/malik.jpeg" alt="">
+                                        <div class="name">
+                                            <span>Muhammad Malik Hidayatullah</span>
+                                            <p>Dokumentasi</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="quotes">
+                                        <p class="center quotes">"Bergerak Maju, Karena Bergerak Mundur Mudah Tersandung"</p>
+                                    </div>
+
+                                    <div class="team center">
+                                        <img src="<?php echo base_url() ?>assets/img/team/dikiw.jpeg" alt="">
+                                        <div class="name">
+                                            <span>Muhamad Dicky Juliansyach</span>
+                                            <p>Database</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="quotes">
+                                        <p class="center quotes">"Berusahalah menjadi orang yang lebih baik setiap hari dan bertanggung jawab"</p>
+                                    </div>
+
+                                    <div class="team center">
+                                        <img src="<?php echo base_url() ?>assets/img/team/kolis.jpeg" alt="">
+                                        <div class="name">
+                                            <span>Muhammad Kholis Kamil Kaban</span>
+                                            <p>Testing</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="quotes">
+                                        <p class="center quotes">"Sunao ni nare"</p>
+                                    </div>
+
+                                    <div class="team center">
+                                        <img src="<?php echo base_url() ?>assets/img/team/vivi.jpeg" alt="">
+                                        <div class="name">
+                                            <span>Sylviana Yuniar</span>
+                                            <p>Project Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="quotes">
+                                        <p class="center quotes">"Hidup sebenarnya sangat sederhana, kita tidak perlu membuatnya menjadi rumit"</p>
+                                    </div>
+
+                                    <div class="team center">
+                                        <img src="<?php echo base_url() ?>assets/img/team/gilang.jpeg" alt="">
+                                        <div class="name">
+                                            <span>Gilang Dwi Saputra</span>
+                                            <p>Back-end Developer</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Add Arrows -->
-                            <div class="arrow">
-                                <div class="swiper-button-next brown-text text-lighten-1"></div>
-                                <div class="swiper-button-prev brown-text text-lighten-1"></div>
-                            </div>
                         </div>
-
+                        <!-- Add Arrows -->
+                        <div class="arrow">
+                            <div class="swiper-button-next brown-text text-lighten-1"></div>
+                            <div class="swiper-button-prev brown-text text-lighten-1"></div>
+                        </div>
                     </div>
+
                 </div>
+            </div>
             </div>
         </section>
         <!-- end -->
