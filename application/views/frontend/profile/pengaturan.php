@@ -26,23 +26,23 @@
    <form action="" method="Post">
       <div class="row ">
          <div class="col-md-6  mb-3">
-            <label for="name" style="font-size: 20px;">Nama</label>
-            <input type="text" class="form-control" id="name" name="name" value="Nadia" required>
+            <label for="username" style="font-size: 20px;">Username</label>
+            <input type="text" class="form-control" id="username" name="username" value="Nadia" required>
          </div>
 
          <div class="col-md-6  mb-3">
-            <label for="email" style="font-size: 20px;">Email</label>
-            <input type="text" class="form-control" id="email" name="email" value="nadiaamanda@gmail.com" required>
+            <label for="full_name" style="font-size: 20px;">Fullname</label>
+            <input type="text" class="form-control" id="full_name" name="full_name" value="Nadia Amanda" required>
          </div>
 
          <div class="col-md-6  mb-3">
-            <label for="pass1" style="font-size: 20px;">Kata Sandi</label>
-            <input type="password" class="form-control" id="pass1" name="pass1" value="12345" required>
+            <label for="email_user" style="font-size: 20px;">Email</label>
+            <input type="text" class="form-control" id="email_user" name="email_user" value="nadiaamanda@gmail.com" required>
          </div>
 
          <div class="col-md-6  mb-3">
-            <label for="pass2" style="font-size: 20px;">Konfirmasi Kata Sandi</label>
-            <input type="password" class="form-control" id="pass2" name="pass2" required>
+            <label for="password_user" style="font-size: 20px;">Kata Sandi</label>
+            <input type="password" class="form-control" id="password_user" name="password_user" value="12345" required>
          </div>
       </div>
 
