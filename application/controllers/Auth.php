@@ -44,7 +44,6 @@ class Auth extends CI_controller
                 $this->load->view('frontend/login/index');
             }
         }
-       
     }
     public function registrasi()
     {
