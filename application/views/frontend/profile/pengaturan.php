@@ -13,7 +13,13 @@
 
       <!-- Poto profile user-->
       <div class="poto">
-         <img src="http://localhost:3000/<?= $profile['foto_user'] ?>" class="rounded-circle responsive-img">
+         <img src="<?= base_url('assets/img/team/nadia.jpg'); ?>" class="rounded-circle responsive-img">
+      </div>
+
+      <!-- ubah poto profil -->
+      <div class="custom-file" style="width:300px; margin-top:20px; margin-bottom:50px;">
+         <input type="file" class="custom-file-input" id="foto_user" name="foto_user" required>
+         <label class="custom-file-label" for="foto_user">Ubah Poto Profil</label>
       </div>
       <form action="<?= base_url() ?>Profile/editProfile/" method="Post">
          <!-- ubah poto profil -->

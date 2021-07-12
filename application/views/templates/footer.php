@@ -5,22 +5,22 @@
           </svg>
           <div class="container content ">
             <div class="row">
-              <div class="col l6 s12 ">
+              <div class="col-sm-6">
                 <h5 class="brown-text logo">Logo Mamamia</h5>
                 <img src="<?php echo base_url() ?>assets/img/logo/mamamia.png" alt="" class="left">
               </div>
-              <div class="row">
-                <div class="col l4 offset-l2 s12">
-                  <h5 class="brown-text">Menu</h5>
-                  <ul>
-                    <li><a class="brown-text text-lighten-3" href="#!">Beranda</a></li>
-                    <li><a class="brown-text text-lighten-3" href="#!">Pendjadwalan</a></li>
-                    <li><a class="brown-text text-lighten-3" href="#!">Menu </a></li>
-                    <li><a class="brown-text text-lighten-3" href="#!">Forum</a></li>
-                  </ul>
-                </div>
+
+              <div class="col-sm-6">
+                <h5 class="brown-text">Menu</h5>
+                <ul>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url('home'); ?>">Beranda</a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url('penjadwalan'); ?>">Pendjadwalan</a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url('menu'); ?>">Menu </a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url('forum'); ?>">Forum</a></li>
+                </ul>
               </div>
             </div>
+          </div>
           </div>
           <div class="footer-copyright amber lighten-3">
             <div class="container center textcopy brown-text">
@@ -69,10 +69,6 @@
             indicators: false,
             height: 200
           });
-
-          //yg kepake di User Profile
-          const materialbox = document.querySelectorAll('.materialboxed');
-          M.Materialbox.init(materialbox);
 
           //untuk gambar
           $('.custom-file-input').on('change', function() {

@@ -66,10 +66,10 @@
 
     <!-- sidenav -->
     <ul class="sidenav" id="mobile-nav">
-        <li><a href="#about" class="brown-text">Beranda</a></li>
-        <li><a href="#clients" class="brown-text">Penjadwalan</a></li>
-        <li><a href="#services" class="brown-text">Menu</a></li>
-        <li><a href="#portfolio" class="brown-text">Forum</a></li>
+        <li><a href="<?= base_url('home'); ?>" class="brown-text">Beranda</a></li>
+        <li><a href="<?= base_url('penjadwalan'); ?>" class="brown-text">Penjadwalan</a></li>
+        <li><a href="<?= base_url('menu'); ?>" class="brown-text">Menu</a></li>
+        <li><a href="<?= base_url('forum'); ?>" class="brown-text">Forum</a></li>
         <li><a href="#contact" class="brown-text">About</a></li>
     </ul>
     <!-- end -->
