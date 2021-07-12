@@ -47,19 +47,19 @@
 
       <div class="col-sm-4  text-center">
          <!-- Poto profile user-->
-         <img src="<?= base_url('assets/img/team/nadia.jpg'); ?>" class="rounded-circle responsive-img">
+         <img src="http://localhost:3000/<?= $profile['foto_user'] ?>" class="rounded-circle responsive-img">
       </div>
 
       <div class="col-sm-4">
 
          <!-- Nama user -->
-         <h3 class="display-4">Nadia</h3>
+         <h3 class="display-4"><?= $profile['username'] ?></h3>
 
          <!-- email -->
-         <p class="lead">nadiaamanda@gmail.com</p>
+         <p class="lead"><?= $profile['email_user'] ?></p>
 
          <!-- pengaturan akun -->
-         <a href="<?= base_url('profile/pengaturan'); ?>" class="waves-effect waves-light btn">Pengaturan Akun</a>
+         <a href="<?= base_url('profile/pengaturan/'); ?><?= $profile['id_user'] ?>" class="waves-effect waves-light btn">Pengaturan Akun</a>
       </div>
    </div>
 </div>
@@ -71,25 +71,22 @@
    <div class="container judull" style="margin-top: -100px;">
       <h4 style="font-size: 35px;">Postinganku</h4>
    </div>
+
+
+
    <div class="container">
       <!-- postingan -->
       <div class="row">
-         <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
-         </div>
-
-         <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
-         </div>
-
-         <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
-         </div>
-
-         <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
-         </div>
-
+         <?php $post_user = $profile['tbl_post_users']; ?>
+         <?php if (!$post_user) : ?>
+            <h4 style="font-size: 35px;">belum ada postingan</h4>
+         <?php else : ?>
+            <?php foreach ($post_user as $key) : ?>
+               <div class="col-md-3">
+                  <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
+               </div>
+            <?php endforeach; ?>
+         <?php endif; ?>
       </div>
    </div>
 </section>
