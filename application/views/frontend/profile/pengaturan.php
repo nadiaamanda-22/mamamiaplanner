@@ -13,14 +13,10 @@
 
       <!-- Poto profile user-->
       <div class="poto">
-         <img src="<?= base_url('assets/img/team/nadia.jpg'); ?>" class="rounded-circle responsive-img">
+         <img src="http://localhost:3000/<?= $profile['foto_user'] ?>" class="rounded-circle responsive-img">
       </div>
 
       <!-- ubah poto profil -->
-      <div class="custom-file" style="width:300px; margin-top:20px; margin-bottom:50px;">
-         <input type="file" class="custom-file-input" id="foto_user" name="foto_user" required>
-         <label class="custom-file-label" for="foto_user">Ubah Poto Profil</label>
-      </div>
       <form action="<?= base_url() ?>Profile/editProfile/" method="Post">
          <!-- ubah poto profil -->
          <div class="custom-file" style="width:300px; margin-top:20px; margin-bottom:50px;">
@@ -33,9 +29,9 @@
    <div class="row ">
 
 
-      <input type="text" class="form-control" id="id_user" name="id_user" value="<?= $profile['id_user'] ?>" required>
-      <input type="text" class="form-control" id="role_id" name="role_id" value="<?= $profile['role_id'] ?>" required>
-      <input type="text" class="form-control" id="is_active" name="is_active" value="<?= $profile['is_active'] ?>" required>
+      <input type="hidden" class="form-control" id="id_user" name="id_user" value="<?= $profile['id_user'] ?>" required>
+      <input type="hidden" class="form-control" id="role_id" name="role_id" value="<?= $profile['role_id'] ?>" required>
+      <input type="hidden" class="form-control" id="is_active" name="is_active" value="<?= $profile['is_active'] ?>" required>
 
 
       <div class="col-md-6  mb-3">

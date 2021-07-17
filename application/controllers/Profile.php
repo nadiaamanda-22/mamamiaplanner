@@ -4,7 +4,22 @@ class Profile extends CI_controller
    public function __construct()
    {
       parent::__construct();
+
+
+      if (!$this->session->userdata('token')) {
+         $allowed = [];
+         if (!in_array($this->router->fetch_method(), $allowed)) {
+            redirect('auth');
+         }
+      }
+
+      if ($this->session->userdata('role_id') == 11) {
+         redirect('helper/index.html');
+      }
+
       $this->load->model('Profile_Model');
+
+
    }
 
    public function index()

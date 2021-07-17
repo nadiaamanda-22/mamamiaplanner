@@ -72,35 +72,17 @@
    <div class="container">
       <!-- postingan -->
       <div class="row">
-         <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
-         </div>
-
-         <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
-         </div>
-
-         <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
-         </div>
-
-         <div class="col-md-3">
-            <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
-         </div>
-
-   <div class="container">
-      <!-- postingan -->
-      <div class="row">
          <?php $post_user = $profile['tbl_post_users']; ?>
          <?php if (!$post_user) : ?>
             <h4 style="font-size: 35px;">belum ada postingan</h4>
          <?php else : ?>
             <?php foreach ($post_user as $key) : ?>
                <div class="col-md-3">
-                  <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img materialboxed" style="margin-top: 20px;">
+                  <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
                </div>
             <?php endforeach; ?>
          <?php endif; ?>
       </div>
    </div>
+
 </section>
