@@ -75,7 +75,7 @@
 
         <!-- Initialize Swiper -->
         <script>
-          var swiper = new Swiper('.swiper-container', {
+          var swiper = new Swiper('.swiper-container2', {
             spaceBetween: 80,
             centeredSlides: true,
             autoplay: {
@@ -93,9 +93,34 @@
           });
         </script>
 
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+
+        <script>
+          var swiper = new Swiper(".mySwiper2", {
+            navigation: {
+              nextEl: ".slide2",
+              prevEl: ".slide3",
+            },
+          });
+        </script>
+
+        
+
+     
+
 <script>
   const modal = document.querySelectorAll('.modal');
   M.Modal.init(modal);
+
+  const select = document.querySelectorAll('.select');
+  M.Select.init(select);
   </script>
 
         </body>

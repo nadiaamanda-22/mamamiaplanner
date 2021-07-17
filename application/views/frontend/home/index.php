@@ -62,7 +62,7 @@
                 <h5 class="center brown-text">Our Team</h5>
                 <div class="row">
                     <div class="col m12 s12 side-img">
-                        <div class="swiper-container">
+                        <div class="swiper-container2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="quotes">

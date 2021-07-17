@@ -1,3 +1,8 @@
+.modalpenjadwalan {
+	font-family: "Poppins" !important;
+	border-radius: 10px;
+}
+
 .slider ul li .judul {
 	margin-top: 80px;
 	font-family: "caveat";
@@ -33,10 +38,91 @@
 }
 
 .penjadwalan1 .kotak {
-	height: 300px;
+	height: 360px;
 	border: 2px solid #aa5806;
 }
 
 .penjadwalan1 .kotak span i {
 	margin-top: 90px !important;
+}
+
+.modalpenjadwalan .content select {
+	padding-bottom: 20px !important;
+}
+
+.modal-footer .simpan {
+	background-color: #aa5806;
+	margin-right: 10px !important;
+	border-radius: 5px;
+	margin-top: 10px !important;
+}
+
+.modal-footer .keluar {
+	background-color: #616161;
+	margin-right: 10px !important;
+	border-radius: 5px;
+	margin-top: 10px !important;
+}
+
+.modal-content a .tambahmasakan {
+	font-size: 35px;
+	color: #aa5806;
+	font-weight: bold;
+}
+
+.modal-content select {
+	font-family: "Poppins" !important;
+	font-weight: 500 !important;
+}
+
+.modal-content h5 {
+	font-family: "Poppins";
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-button-next {
+	color: #aa5806;
+	width: 5px;
+}
+
+.swiper-button-prev {
+	color: #aa5806;
+	width: 5px;
+}
+
+.materialboxed {
+	width: 100%;
+}
+
+.kotak2 h5 {
+	font-size: 16px;
+	text-align: center;
+}
+
+.kotak2 h6 {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.kotak2 p {
+	text-align: center;
+}
+
+.kotak2 a {
+	font-size: 20px;
+}
+
+.kotak2 .edit {
+	background-color: #aa5806;
+}
+
+.kotak2 .hapus {
+	background-color: rgb(255, 80, 80);
 }

@@ -58,69 +58,183 @@
   </div>
 
   <!-- Akhir Form -->
-
+ 
   <!-- Card -->
-  <div class="container penjadwalan1">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card kotak">
-          <div class="card-body text-center">
-            <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card kotak">
-          <div class="card-body center">
-            <a href=""><i class="bi bi-plus-circle plus"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card kotak">
-          <div class="card-body center">
-            <a href=""><i class="bi bi-plus-circle plus"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card kotak">
-          <div class="card-body center">
-            <a href=""><i class="bi bi-plus-circle plus"></i></a>
+  <div class="swiper-container mySwiper2">
+      <div class="swiper-wrapper2">
+        <div class="swiper-slide">
+
+         <div class="container penjadwalan1">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card kotak text-center">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="card-title mb-3">Tambah Masakan</h3>
+                      <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card kotak">
+                <div class="card-body kotak2 center">
+                  <div class="row">
+                    <div class="col-md-12">
+                    <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="materialboxed center" src="<?php echo base_url()?>assets/img/slider/2.png">
+                        <h5>1 Juli 2021</h5>
+                        <h6>Ayam Woku</h6>
+                        <h6>Sulawesi</h6>
+                        <p>400 Kalori/Porsi</p>
+
+                        <a class="btn edit" href="#" role="button"><i class="bi bi-pencil-square text-white"></i></a>
+                        <a class="btn hapus" href="#" role="button"><i class="bi bi-trash text-white"></i></a></div>
+                      
+                      <div class="swiper-slide"><img class="materialboxed center" src="<?php echo base_url()?>assets/img/slider/2.png">
+                        <h5>1 Juli 2021</h5>
+                        <h6>Ayam Woku</h6>
+                        <h6>Sulawesi</h6>
+                        <p>400 Kalori/Porsi</p>
+
+                        <a class="btn edit" href="#" role="button"><i class="bi bi-pencil-square text-white"></i></a>
+                        <a class="btn hapus" href="#" role="button"><i class="bi bi-trash text-white"></i></a></div>
+
+                    </div>
+                    <div class="swiper-button-next" style="margin-top:20px;"></div>
+                    <div class="swiper-button-prev" style="margin-top:20px;"></div>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card kotak text-center">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="card-title mb-3">Tambah Masakan</h3>
+                      <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+            <div class="card kotak text-center">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="card-title mb-3">Tambah Masakan</h3>
+                      <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card kotak text-center">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="card-title mb-3">Tambah Masakan</h3>
+                      <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+            <div class="card kotak text-center">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="card-title mb-3">Tambah Masakan</h3>
+                      <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card kotak">
-          <div class="card-body center">
-            <a href=""><i class="bi bi-plus-circle plus"></i></a>
-          </div>
+
         </div>
+        <div class="swiper-slide">Slide 2</div>
+        
       </div>
-      <div class="col-md-4">
-        <div class="card kotak">
-          <div class="card-body center">
-            <a href=""><span><i class="bi bi-plus-circle plus"></i></span></a>
-          </div>
-        </div>
-      </div>
+      <div class="swiper-button-next slide2"></div>
+      <div class="swiper-button-prev slide3"></div>
     </div>
-  </div>
+    
   <!-- Akhir Card -->
 
 
    <!-- Modal Structure -->
-   <div id="modal1" class="modal">
+   <div id="modal1" class="modal modalpenjadwalan">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Pilih Menu Masakan</h4>
+      <div class="divider"></div>
+      <div class="content">
+          <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                <i class="bi bi-search prefix"></i>
+                  <input type="text" id="autocomplete-input" class="autocomplete">
+                  <label for="autocomplete-input">Cari Masakan</label>
+                </div>
+              </div>
+          </div>
+          <h5>Menu 1</h5>
+          <select class="form-select" ria-label="Default select example" style="margin-bottom:10px;">
+            <option selected>Soto</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select class="form-select" aria-label="Disabled select example" disabled>
+            <option >Sulawesi</option>
+          </select>
+          <h5 style="padding-top:20px;">Menu 2</h5>
+          <select class="form-select" ria-label="Default select example" style="margin-bottom:10px;">
+            <option selected>Soto</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select class="form-select" aria-label="Disabled select example" disabled>
+            <option >Sulawesi</option>
+          </select>
+          <a href="" class="text-end"><i class="bi bi-plus tambahmasakan"></i></a>
+      </div>
+    </div>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn keluar">Keluar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn simpan">Simpan</a>
     </div>
   </div>
 

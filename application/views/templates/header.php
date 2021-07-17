@@ -27,6 +27,10 @@
 </head>
 
 <body>
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Profil</a></li>
+  <li><a href="#!">Logout</a></li>
+</ul>
     <!-- Navbar -->
     <div class="navbar-fixed">
         <nav class=" amber lighten-4">
@@ -38,13 +42,15 @@
 						alt=""
 						width="30"
 						height="63"
-						class="d-inline-block align-text-center "
+						class="d-inline-block align-text-center mb-1"
 					/>
 					<span>Mamamia Planner</span>
 				</a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons brown-text">menu</i></a>
                     <ul class=" right hide-on-med-and-down login">
 
+                    <?php if ($this->session->userdata('username') != null) : ?>
+                            <li><a href="#!" class="brown-text dropdown-trigger" data-target="dropdown1"><i class=" material-icons left">account_circle</i><?= $this->session->userdata('username') ?></a></li>
                         <?php else : ?>
                             <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masuk / Daftar</a></li>
                         <?php endif; ?>
