@@ -75,7 +75,7 @@
 
         <!-- Initialize Swiper -->
         <script>
-          var swiper = new Swiper('.swiper-container2', {
+          var swiper = new Swiper('.swiper2', {
             spaceBetween: 80,
             centeredSlides: true,
             autoplay: {
