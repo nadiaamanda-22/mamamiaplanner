@@ -5,22 +5,20 @@
           </svg>
           <div class="container content ">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col l6 s12 ">
                 <h5 class="brown-text logo">Logo Mamamia</h5>
                 <img src="<?php echo base_url() ?>assets/img/logo/mamamia.png" alt="" class="left">
               </div>
-
-              <div class="col-sm-6">
-                <h5 class="brown-text">Menu</h5>
-                <ul>
-                  <li><a class="brown-text text-lighten-3" href="<?= base_url('home'); ?>">Beranda</a></li>
-                  <li><a class="brown-text text-lighten-3" href="<?= base_url('penjadwalan'); ?>">Pendjadwalan</a></li>
-                  <li><a class="brown-text text-lighten-3" href="<?= base_url('menu'); ?>">Menu </a></li>
-                  <li><a class="brown-text text-lighten-3" href="<?= base_url('forum'); ?>">Forum</a></li>
-                </ul>
-              </div>
+              <div class="col l6 s12">
+                  <h5 class="brown-text">Menu</h5>
+                  <ul>
+                    <li><a class="brown-text text-lighten-3" href="#!">Beranda</a></li>
+                    <li><a class="brown-text text-lighten-3" href="#!">Pendjadwalan</a></li>
+                    <li><a class="brown-text text-lighten-3" href="#!">Menu </a></li>
+                    <li><a class="brown-text text-lighten-3" href="#!">Forum</a></li>
+                  </ul>
+                </div>
             </div>
-          </div>
           </div>
           <div class="footer-copyright amber lighten-3">
             <div class="container center textcopy brown-text">
@@ -31,13 +29,17 @@
         <!-- end -->
 
         <!--JavaScript at end of body for optimized loading-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/script.js"></script>
+        <!-- Js Bootsrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- Popover -->
+        <script src="<?php echo base_url() ?>assets/materialize/js/popover.js"></script>
 
         <!-- slider js -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
         <script>
           const sideNav = document.querySelectorAll('.sidenav');
           M.Sidenav.init(sideNav);
@@ -69,18 +71,11 @@
             indicators: false,
             height: 200
           });
-
-          //untuk gambar
-          $('.custom-file-input').on('change', function() {
-            let fileName = $(this).val().split('\\').pop();
-            $(this).next('.custom-file-label').addClass("selected").html(fileName);
-
-          });
         </script>
 
         <!-- Initialize Swiper -->
         <script>
-          var swiper = new Swiper('.swiper-container', {
+          var swiper = new Swiper('.swiper2', {
             spaceBetween: 80,
             centeredSlides: true,
             autoplay: {
@@ -97,6 +92,36 @@
             },
           });
         </script>
+
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+
+        <script>
+          var swiper = new Swiper(".mySwiper2", {
+            navigation: {
+              nextEl: ".slide2",
+              prevEl: ".slide3",
+            },
+          });
+        </script>
+
+        
+
+     
+
+<script>
+  const modal = document.querySelectorAll('.modal');
+  M.Modal.init(modal);
+
+  const select = document.querySelectorAll('.select');
+  M.Select.init(select);
+  </script>
 
         </body>
 
