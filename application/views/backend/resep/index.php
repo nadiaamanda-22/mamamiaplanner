@@ -104,6 +104,11 @@
                         <div id="kalori_error" class="form-text" style="color:red;"></div>
                     </div>
                     <div class="mb-3">
+                        <label for="asal_masakan" class="form-label">Asal Masakan</label>
+                        <input type="text" class="form-control" name="asal_masakan" id="asal_masakan">
+                        <div id="asal_masakan_error" class="form-text" style="color:red;"></div>
+                    </div>
+                    <div class="mb-3">
                         <label for="gambar_resep" class="form-label">Gambar resep <sup style="color: red">*format yang didukung .png, .jpeg, .jpg</sup></label>
                         <input type="file" class="form-control" name="gambar_resep" id="gambar_resep">
                     </div>

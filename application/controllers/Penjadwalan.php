@@ -11,10 +11,17 @@
                 redirect('auth');
             }
         }
+
+        $this->load->model('Penjadwalan_Model');
     }
         public function index (){
+
+        $data['result'] = $this->Penjadwalan_Model->F_getPenjadwalan();
+        $data['jadwals'] = $data['result']['data'];
+
             $this->load->view('templates/header.php');
-            $this->load->view('frontend/penjadwalan/index.php');
+        $this->load->view('frontend/penjadwalan/index.php', $data);
             $this->load->view('templates/footer.php');
         }
+
     }

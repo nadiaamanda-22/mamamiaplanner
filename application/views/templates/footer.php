@@ -10,14 +10,14 @@
                 <img src="<?php echo base_url() ?>assets/img/logo/mamamia.png" alt="" class="left">
               </div>
               <div class="col l6 s12">
-                  <h5 class="brown-text">Menu</h5>
-                  <ul>
-                    <li><a class="brown-text text-lighten-3" href="#!">Beranda</a></li>
-                    <li><a class="brown-text text-lighten-3" href="#!">Pendjadwalan</a></li>
-                    <li><a class="brown-text text-lighten-3" href="#!">Menu </a></li>
-                    <li><a class="brown-text text-lighten-3" href="#!">Forum</a></li>
-                  </ul>
-                </div>
+                <h5 class="brown-text">Menu</h5>
+                <ul>
+                  <li><a class="brown-text text-lighten-3" href="#!">Beranda</a></li>
+                  <li><a class="brown-text text-lighten-3" href="#!">Pendjadwalan</a></li>
+                  <li><a class="brown-text text-lighten-3" href="#!">Menu </a></li>
+                  <li><a class="brown-text text-lighten-3" href="#!">Forum</a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="footer-copyright amber lighten-3">
@@ -29,7 +29,7 @@
         <!-- end -->
 
         <!--JavaScript at end of body for optimized loading-->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/script.js"></script>
         <!-- Js Bootsrap -->
@@ -103,25 +103,25 @@
         </script>
 
         <script>
-          var swiper = new Swiper(".mySwiper2", {
+          var swiper1 = new Swiper('.swiper1', {
             navigation: {
-              nextEl: ".slide2",
-              prevEl: ".slide3",
+              nextEl: ".slide3",
+              prevEl: ".slide2",
             },
           });
         </script>
 
-        
 
-     
 
-<script>
-  const modal = document.querySelectorAll('.modal');
-  M.Modal.init(modal);
 
-  const select = document.querySelectorAll('.select');
-  M.Select.init(select);
-  </script>
+
+        <script>
+          const modal = document.querySelectorAll('.modal');
+          M.Modal.init(modal);
+
+          const select = document.querySelectorAll('.select');
+          M.Select.init(select);
+        </script>
 
         </body>
 

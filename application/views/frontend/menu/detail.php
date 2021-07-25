@@ -42,7 +42,7 @@
       <h4 style="font-size: 35px;">Cara Membuat</h4>
 
       <ol type="A">
-         <?php foreach ($masak as $m) : ?>
+         <?php foreach ($resep['tbl_langkah_masaks'] as $m) : ?>
             <li><?= $m['langkah_masak'] ?></li>
          <?php endforeach; ?>
       </ol>

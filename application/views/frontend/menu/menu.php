@@ -15,7 +15,7 @@
    <div class=" container">
       <h4 class="judul-menu" style="font-size: 35px;"><?= $result['total_data'] ?> Menu Tersedia</h4>
       <div class="row">
-         <?php foreach ($resep as $r) : ?>
+         <?php foreach ($reseps as $resep) : ?>
             <div class="col-sm-4">
                <div class="card menu">
                   <div class="card-image waves-effect waves-block waves-light">
@@ -26,7 +26,7 @@
                         <i class="material-icons right">more_vert</i>
                      </span>
                      <hr style="width: 90%;">
-                     <p style="text-align: left;"><button><a href="<?= base_url() ?>Menu/details/<?= $r['id_resep'] ?>" style="color:#aa5806;">Detail</a></button></p>
+                     <p style="text-align: left;"><button><a href="<?= base_url() ?>Menu/details/<?= $resep['id_resep'] ?>" style="color:#aa5806;">Detail</a></button></p>
                   </div>
                   <div class="card-reveal">
                      <span class="card-title grey-text text-darken-4"><?= $resep['nama_resep'] ?><i class="material-icons right">close</i></span>
