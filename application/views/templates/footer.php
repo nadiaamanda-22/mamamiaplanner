@@ -26,6 +26,7 @@
             </div>
           </div>
         </footer>
+        
         <!-- end -->
 
         <!--JavaScript at end of body for optimized loading-->
@@ -102,14 +103,7 @@
           });
         </script>
 
-        <script>
-          var swiper = new Swiper(".mySwiper2", {
-            navigation: {
-              nextEl: ".slide2",
-              prevEl: ".slide3",
-            },
-          });
-        </script>
+       
 
 <script>
   const modal = document.querySelectorAll('.modal');
@@ -119,39 +113,27 @@
   M.Select.init(select);
   </script>
 
-  <!-- JS Forum here -->
-		<!-- All JS Custom Plugins Link Here here -->
-      <script src="<?php echo base_url() ?>assets/materialize/js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="<?php echo base_url() ?> assets/materialize/js/vendor/jquery-1.12.4.min.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/popper.min.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/bootstrap.min.js"></script>
-	   <!-- Jquery Mobile Menu -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.slicknav.min.js"></script>
-
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/owl.carousel.min.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/slick.min.js"></script>
-
-		<!-- One Page, Animated-HeadLin -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/wow.min.js"></script>
-		<script src="<?php echo base_url() ?> assets/materialize/js/animated.headline.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.magnific-popup.js"></script>
-
-		<!-- Nice-select, sticky -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.nice-select.min.js"></script>
-		<script src="<?php echo base_url() ?> assets/materialize/js/jquery.sticky.js"></script>
-        
-      <!-- contact js -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/contact.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.form.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.validate.min.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/mail-script.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-      <script src="<?php echo base_url() ?> assets/materialize/js/plugins.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+      <script>
+        $('.owl-carousel').owlCarousel({
+          loop:false,
+          margin:10,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:1
+              }
+          }
+      })
+      </script>
 
   </body>
 </html>

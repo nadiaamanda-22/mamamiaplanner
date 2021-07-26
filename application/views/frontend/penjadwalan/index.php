@@ -52,10 +52,8 @@
  
   <!-- Card -->
 
-  <div class="swiper-container mySwiper2">
-      <div class="swiper-wrapper2" style="width:100%">
-        <div class="swiper-slide">
-
+    <div class="owl-carousel owl-theme">
+      <div class="item">
          <div class="container penjadwalan1">
           <div class="row">
             <div class="col-md-4">
@@ -176,14 +174,42 @@
             </div>
           </div>
         </div>
-
-        </div>
-        <div class="swiper-slide">Slide 2</div>
-        
       </div>
-      <div class="swiper-button-next slide2"></div>
-      <div class="swiper-button-prev slide3"></div>
-    </div>
+      <div class="item"><h4>2</h4></div>
+      <div class="item"><h4>3</h4></div>
+      <div class="item"><h4>4</h4></div>
+      <div class="item"><h4>5</h4></div>
+      <div class="item"><h4>6</h4></div>
+      <div class="item"><h4>7</h4></div>
+      <div class="item"><h4>8</h4></div>
+      <div class="item"><h4>9</h4></div>
+      <div class="item"><h4>10</h4></div>
+      <div class="item"><h4>11</h4></div>
+      
+   </div>
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
     
   <!-- Akhir Card -->
 
