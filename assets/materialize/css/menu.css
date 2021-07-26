@@ -83,6 +83,7 @@ footer .footer-copyright {
      font-weight: bold;
  }
 
+ 
 
 
 
@@ -99,13 +100,4 @@ footer .footer-copyright {
 
 
 
- /*
-  When creating your CSS selector,
-  change "brown" to something of your choosing
-  */
-  .waves-effect.waves-orange .waves-ripple {
-    /* The alpha value allows the text and background color
-    of the button to still show through. */
-     background-color: rgba(255, 255, 255, 0.753);
-   }
-
+ 
