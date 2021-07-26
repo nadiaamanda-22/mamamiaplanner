@@ -15,7 +15,7 @@
    <div class=" container">
       <h4 class="judul-menu" style="font-size: 35px;"><?= $result['total_data'] ?> Menu Tersedia</h4>
       <div class="row">
-         <?php foreach ($reseps as $resep) : ?>
+         <?php foreach (array_slice($reseps, 0, 9) as $resep) : ?>
             <div class="col-sm-4">
                <div class="card menu">
                   <div class="card-image waves-effect waves-block waves-light">
@@ -41,16 +41,6 @@
                </div>
             </div>
          <?php endforeach; ?>
-      </div>
-
-      <div class="container">
-         <ul class="pagination">
-            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-            <li class="waves-effect active"><a href="menu.html">1</a></li>
-            <li class="waves-effect"><a href="<?= base_url('menu2.php'); ?>">2</a></li>
-            <li class="waves-effect"><a href="<?= base_url('menu3.php'); ?>">3</a></li>
-            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-         </ul>
       </div>
    </div>
 

@@ -31,7 +31,7 @@
 </head>
 <script>
     const base_url = '<?= base_url() ?>';
-    const id = '<?= $this->session->userdata('id_user') ?>'
+    const id_user = '<?= $this->session->userdata('id_user') ?>'
 </script>
 
 <body>

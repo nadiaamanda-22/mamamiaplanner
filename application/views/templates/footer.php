@@ -29,7 +29,7 @@
         <!-- end -->
 
         <!--JavaScript at end of body for optimized loading-->
-
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/script.js"></script>
         <!-- Js Bootsrap -->
