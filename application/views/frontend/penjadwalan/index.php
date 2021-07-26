@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        
-        <title>Mamamia Planner</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-        <link rel="stylesheet" href="<?= base_url('assets/materialize/css/penjadwalan.css'); ?>">
-    </head>
   <body>  
  
    <!-- sliders -->
@@ -62,7 +53,7 @@
   <!-- Card -->
 
   <div class="swiper-container mySwiper2">
-      <div class="swiper-wrapper2">
+      <div class="swiper-wrapper2" style="width:100%">
         <div class="swiper-slide">
 
          <div class="container penjadwalan1">

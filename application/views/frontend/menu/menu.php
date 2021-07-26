@@ -12,8 +12,54 @@
       </ul>
    </div>
 
-   <div class="container">
+   <div class="container menu2">
       <h4 class="judul-menu"><?= $result['total_data'] ?> Menu Tersedia</h4>
+       <div class="div">
+          <div class="row">
+             <div class="col-m12">
+                <div class="input-group">
+                  <button class="btn btn-outline-secondary dropdown-toggle dropdownfilter mt-4 " type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                  <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#">Masakan Daerah</a></li>
+                     <li><hr class="dropdown-divider"></li>
+                     <li><a class="dropdown-item" href="#">
+                          <form action="#">
+                              <p>
+                                 <label>
+                                 <input name="group1" type="radio" checked />
+                                 <span>Red</span>
+                                 </label>
+                              </p>
+                              <p>
+                                 <label>
+                                 <input name="group1" type="radio" />
+                                 <span>Yellow</span>
+                                 </label>
+                              </p>
+                              <p>
+                                 <label>
+                                 <input class="with-gap" name="group1" type="radio"  />
+                                 <span>Green</span>
+                                 </label>
+                              </p>
+                              <p>
+                                 <label>
+                                 <input name="group1" type="radio" disabled="disabled" />
+                                 <span>Brown</span>
+                                 </label>
+                              </p>
+                           </form>
+                     </a></li>
+                  </ul>
+                  <div class="input-field col s6 ">
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Telephone</label>
+               </div>
+                  <button type="button" class="btn btn-link brown mt-4" ><i class="bi bi-search"></i></button>
+               </div>
+             </div>
+          </div>
+       </div>
       <div class="row">
          <?php foreach ($resep as $r) : ?>
             <div class="col m4 s12">

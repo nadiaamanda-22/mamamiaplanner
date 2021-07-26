@@ -36,6 +36,11 @@
       <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/nice-select.css">
       <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/forumstyle.css">
 
+      <!-- penjadwalan -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="<?= base_url('assets/materialize/css/penjadwalan.css'); ?>">
+
 </head>
 
 <body>
