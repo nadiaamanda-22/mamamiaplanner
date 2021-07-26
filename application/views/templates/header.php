@@ -4,6 +4,7 @@
 <head>
 
     <title>Mamamia Planner</title>
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url() ?>assets/img/logo/logobaru.png">
      <!-- Bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Import Google Icon Font-->
@@ -23,6 +24,17 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- CSS Forum here -->
+      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/carousel.min.css">
+      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/slicknav.css">
+      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/animate.min.css">
+      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/magnific-popup.css">
+      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/fontawesome-all.min.css">
+      <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/themify-icons.css">
+      <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/slick.css">
+      <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/nice-select.css">
+      <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/forumstyle.css">
 
 </head>
 
@@ -60,7 +72,7 @@
                         <li><a href="<?php echo base_url() ?>home" class="brown-text">Beranda</a></li>
                         <li><a href="<?php echo base_url() ?>penjadwalan" class="brown-text">Penjadwalan</a></li>
                         <li><a href="<?= base_url() ?>menu" class="brown-text">Menu</a></li>
-                        <li><a href="#portfolio" class="brown-text">Forum</a></li>
+                        <li><a href="<?= base_url() ?>forum" class="brown-text">Forum</a></li>
                         <li><a href="<?= base_url() ?>Auth/logout" class="brown-text">Logout</a></li>
                     </ul>
                 </div>

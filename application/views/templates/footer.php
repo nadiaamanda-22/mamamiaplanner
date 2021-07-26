@@ -111,10 +111,6 @@
           });
         </script>
 
-        
-
-     
-
 <script>
   const modal = document.querySelectorAll('.modal');
   M.Modal.init(modal);
@@ -123,6 +119,39 @@
   M.Select.init(select);
   </script>
 
-        </body>
+  <!-- JS Forum here -->
+		<!-- All JS Custom Plugins Link Here here -->
+      <script src="<?php echo base_url() ?>assets/materialize/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="<?php echo base_url() ?> assets/materialize/js/vendor/jquery-1.12.4.min.js"></script>
+      <script src="<?php echo base_url() ?> assets/materialize/js/popper.min.js"></script>
+      <script src="<?php echo base_url() ?> assets/materialize/js/bootstrap.min.js"></script>
+	   <!-- Jquery Mobile Menu -->
+      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.slicknav.min.js"></script>
 
-        </html>
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+      <script src="<?php echo base_url() ?> assets/materialize/js/owl.carousel.min.js"></script>
+      <script src="<?php echo base_url() ?> assets/materialize/js/slick.min.js"></script>
+
+		<!-- One Page, Animated-HeadLin -->
+      <script src="<?php echo base_url() ?> assets/materialize/js/wow.min.js"></script>
+		<script src="<?php echo base_url() ?> assets/materialize/js/animated.headline.js"></script>
+      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.magnific-popup.js"></script>
+
+		<!-- Nice-select, sticky -->
+      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.nice-select.min.js"></script>
+		<script src="<?php echo base_url() ?> assets/materialize/js/jquery.sticky.js"></script>
+        
+      <!-- contact js -->
+      <script src="<?php echo base_url() ?> assets/materialize/js/contact.js"></script>
+      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.form.js"></script>
+      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.validate.min.js"></script>
+      <script src="<?php echo base_url() ?> assets/materialize/js/mail-script.js"></script>
+      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+      <script src="<?php echo base_url() ?> assets/materialize/js/plugins.js"></script>
+      <script src="<?php echo base_url() ?> assets/materialize/js/main.js"></script>
+
+  </body>
+</html>

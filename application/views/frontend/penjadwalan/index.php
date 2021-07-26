@@ -69,6 +69,7 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card kotak text-center">
+                <div class="kotakheader"><p>2021-12-01</p></div>
                 <div class="card-body">
                   <div class="container">
                     <div class="row">
@@ -120,6 +121,7 @@
 
             <div class="col-md-4">
               <div class="card kotak text-center">
+                <div class="kotakheader"><p>2021-12-01</p></div>
                 <div class="card-body">
                   <div class="container">
                     <div class="row">
@@ -137,6 +139,7 @@
           <div class="row">
             <div class="col-md-4">
             <div class="card kotak text-center">
+              <div class="kotakheader"><p>2021-12-01</p></div>
                 <div class="card-body">
                   <div class="container">
                     <div class="row">
@@ -151,6 +154,7 @@
             </div>
             <div class="col-md-4">
               <div class="card kotak text-center">
+                <div class="kotakheader"><p>2021-12-01</p></div>
                 <div class="card-body">
                   <div class="container">
                     <div class="row">
@@ -166,6 +170,7 @@
             
             <div class="col-md-4">
             <div class="card kotak text-center">
+              <div class="kotakheader"><p>2021-12-01</p></div>
                 <div class="card-body">
                   <div class="container">
                     <div class="row">
