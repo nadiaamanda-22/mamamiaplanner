@@ -5,8 +5,8 @@
 
     <title>Mamamia Planner</title>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url() ?>assets/img/logo/logobaru.png">
-     <!-- Bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -21,25 +21,27 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <!-- flaticon -->
     <link href="<?php echo base_url() ?>assets/uicons/css/uicons-regular-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/menu.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/materialize/css/menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- CSS Forum here -->
+    <!-- <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/carousel.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/slicknav.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/animate.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/slick.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/nice-select.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/forumstyle.css"> -->
+
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-
-     <!-- CSS Forum here -->
-      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/carousel.min.css">
-      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/slicknav.css">
-      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/animate.min.css">
-      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/magnific-popup.css">
-      <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/fontawesome-all.min.css">
-      <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/themify-icons.css">
-      <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/slick.css">
-      <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/nice-select.css">
-      <link rel="stylesheet" href="<?php echo base_url() ?> assets/materialize/css/forumstyle.css">
-
 </head>
 <script>
     const base_url = '<?= base_url() ?>';

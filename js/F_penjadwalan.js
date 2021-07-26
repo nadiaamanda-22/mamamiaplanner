@@ -247,7 +247,7 @@ $('.add_penjadwalan_user').on('click', function(){
 
     $('#key_resep_jadwal').on('keyup', function(){
         let keyword = $('#key_resep_jadwal').val();
-
+        console.log('ok')
         $.ajax({
         url : 'http://localhost:3000/resep/search/'+keyword,
         type : 'GET',

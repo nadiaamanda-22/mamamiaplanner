@@ -29,6 +29,7 @@
         <!-- end -->
 
         <!--JavaScript at end of body for optimized loading-->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/script.js"></script>
@@ -105,10 +106,16 @@
         <script>
           var swiper1 = new Swiper('.swiper1', {
             navigation: {
-              nextEl: ".slide3",
-              prevEl: ".slide2",
+              nextEl: ".slide2",
+              prevEl: ".slide3",
             },
           });
+        </script>
+
+
+
+        <script>
+          new Splide('.splide').mount();
         </script>
 
 
@@ -121,39 +128,40 @@
           M.Select.init(select);
         </script>
 
-  <!-- JS Forum here -->
-		<!-- All JS Custom Plugins Link Here here -->
-      <script src="<?php echo base_url() ?>assets/materialize/js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="<?php echo base_url() ?> assets/materialize/js/vendor/jquery-1.12.4.min.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/popper.min.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/bootstrap.min.js"></script>
-	   <!-- Jquery Mobile Menu -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.slicknav.min.js"></script>
+        <!-- JS Forum here -->
+        <!-- All JS Custom Plugins Link Here here -->
+        <!-- <script src="<?php echo base_url() ?>assets/materialize/js/vendor/modernizr-3.5.0.min.js"></script> -->
+        <!-- Jquery, Popper, Bootstrap -->
+        <!-- <script src="<?php echo base_url() ?>assets/materialize/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/popper.min.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/bootstrap.min.js"></script> -->
+        <!-- Jquery Mobile Menu -->
+        <!-- <script src="<?php echo base_url() ?>assets/materialize/js/jquery.slicknav.min.js"></script> -->
 
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/owl.carousel.min.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/slick.min.js"></script>
+        <!-- Jquery Slick , Owl-Carousel Plugins -->
+        <!-- <script src="<?php echo base_url() ?>assets/materialize/js/owl.carousel.min.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/slick.min.js"></script> -->
 
-		<!-- One Page, Animated-HeadLin -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/wow.min.js"></script>
-		<script src="<?php echo base_url() ?> assets/materialize/js/animated.headline.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.magnific-popup.js"></script>
+        <!-- One Page, Animated-HeadLin -->
+        <!-- <script src="<?php echo base_url() ?>assets/materialize/js/wow.min.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/animated.headline.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/jquery.magnific-popup.js"></script> -->
 
-		<!-- Nice-select, sticky -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.nice-select.min.js"></script>
-		<script src="<?php echo base_url() ?> assets/materialize/js/jquery.sticky.js"></script>
-        
-      <!-- contact js -->
-      <script src="<?php echo base_url() ?> assets/materialize/js/contact.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.form.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.validate.min.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/mail-script.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-      <script src="<?php echo base_url() ?> assets/materialize/js/plugins.js"></script>
-      <script src="<?php echo base_url() ?> assets/materialize/js/main.js"></script>
+        <!-- Nice-select, sticky -->
+        <!-- <script src="<?php echo base_url() ?>assets/materialize/js/jquery.nice-select.min.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/jquery.sticky.js"></script> -->
 
-  </body>
-</html>
+        <!-- contact js -->
+        <!-- <script src="<?php echo base_url() ?>assets/materialize/js/contact.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/jquery.form.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/jquery.validate.min.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/mail-script.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/jquery.ajaxchimp.min.js"></script> -->
+
+        <!-- Jquery Plugins, main Jquery -->
+        <!-- <script src="<?php echo base_url() ?>assets/materialize/js/plugins.js"></script>
+        <script src="<?php echo base_url() ?>assets/materialize/js/main.js"></script> -->
+
+        </body>
+
+        </html>

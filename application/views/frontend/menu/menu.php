@@ -44,4 +44,6 @@
       </div>
    </div>
 
+   <script src="<?= base_url() ?>js/F_resep.js"></script>
+
    <!-- End Menu -->
