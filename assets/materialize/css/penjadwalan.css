@@ -126,3 +126,15 @@
 .kotak2 .hapus {
 	background-color: rgb(255, 80, 80);
 }
+
+/* kotak header */
+.penjadwalan1 .kotakheader {
+background-color: #aa5806;
+
+height: 50px;
+}
+.penjadwalan1 .kotakheader p {
+	margin-top: 15px !important;
+	font-weight: bold;
+	color: white;
+}

@@ -8,30 +8,22 @@
   <link rel="stylesheet" href="<?= base_url('assets/materialize/css/penjadwalan.css'); ?>">
 </head>
 
-<body>
-
-  <!-- sliders -->
-  <div class="slider mb-4">
-    <ul class="slides">
-      <li>
-        <img src="<?php echo base_url() ?>assets/img/slider/2.png"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 class="white-text judul ">Penjadwalan</h3>
-        </div>
-      </li>
-  </div>
-  <!-- end -->
-
-  <!-- Dropdown -->
-  <div class="container jadwal">
-    <div class="row center">
-      <div class="col m12 s12">
-        <!-- Dropdown -->
-        <div class="container jadwal">
-          <div class="row center">
-            <div class="col m12 s12">
-              <h5>Mamamia Planner</h5>
-              <h4>Jadwal Masakku</h4>
+         <div class="container penjadwalan1">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card kotak text-center">
+                <div class="kotakheader"><p>2021-12-01</p></div>
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="card-title mb-3">Tambah Masakan</h3>
+                      <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -161,49 +153,48 @@
           </div>
         </div>
 
-
-
-
-
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal modalpenjadwalan">
-          <div class="modal-content">
-            <h4>Pilih Menu Masakan</h4>
-            <div class="divider"></div>
-            <div class="content">
-              <div class="row">
-                <div class="col s12">
-                  <div class="row">
-                    <form action="" id="form_penjadwalan_user">
-                      <div class="input-field col s12">
-                        <i class="bi bi-search prefix"></i>
-                        <input type="text" id="key_resep_jadwal" name="key_resep_jadwal" autocomplete="off">
-                        <label for="key_resep_jadwal">Cari Masakan</label>
-                        <div id="resep_notfound" class="form-text text-danger"></div>
+          <div class="row">
+            <div class="col-md-4">
+            <div class="card kotak text-center">
+              <div class="kotakheader"><p>2021-12-01</p></div>
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="card-title mb-3">Tambah Masakan</h3>
+                      <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
                       </div>
+                    </div>
                   </div>
                 </div>
-                <h5>Menu</h5>
-                <select class="form-select list_resep" ria-label="Default select example" style="margin-bottom:10px;">
-                  <option selected class="option_list">-----List Resep Masakan------</option>
-                </select>
-                <div class="row">
-                  <div class="input-field col s6">
-                    <input placeholder="Asal Masakan" id="asal_masakan" name="" type="text" readonly>
-                    <label for="asal_masakan">
-                      <h5>Asal Masakan</h5>
-                    </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card kotak text-center">
+                <div class="kotakheader"><p>2021-12-01</p></div>
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="card-title mb-3">Tambah Masakan</h3>
+                      <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="input-field col s3">
-                    <input id="kalori_perporsi" placeholder="kalori_perporsi" type="text" readonly>
-                    <label for="kalori_perporsi">
-                      <h5>Kalori</h5>
-                    </label>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <textarea id="catatan" name="catatan" class="materialize-textarea"></textarea>
-                      <label for="catatan">Catatan</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+            <div class="card kotak text-center">
+              <div class="kotakheader"><p>2021-12-01</p></div>
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="card-title mb-3">Tambah Masakan</h3>
+                      <a href="#modal1" class="modal-trigger"> <span><i class="bi bi-plus-circle plus"></i></span></a>
+                      </div>
                     </div>
                   </div>
                 </div>
