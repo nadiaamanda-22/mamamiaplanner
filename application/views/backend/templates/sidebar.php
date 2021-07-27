@@ -32,7 +32,7 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenLangkahMasak" aria-expanded="false">
                                 <i class="fa fa-list-ol" aria-hidden="true"></i>
-                                <span class="hide-menu">Langkah Memasak</span>
+                                <span class="hide-menu" style="color:#aa5806; font weight:bold;">Langkah Memasak</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -56,12 +56,12 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url() ?>ManajemenForum" aria-expanded="false">
                                 <i class="fa fa-users" aria-hidden="true"></i>
-                                <span class="hide-menu">Forum</span>
+                                <span class="hide-menu" style="color:#aa5806; font weight:bold;">Forum</span>
                             </a>
                         </li>
                         <li class="sidebar-item" style="text-align: center;">
-                            <a href="http://"><span class="hide-menu">Setting | </span></a>
-                            <a href="<?= base_url()        ?>Auth/logout"><span class="hide-menu">Logout</span></a>
+                            <a href="http://"><span class="hide-menu" style="color:#aa5806; font weight:bold;">Setting | </span></a>
+                            <a href="<?= base_url()        ?>Auth/logout"><span class="hide-menu" style="color:#aa5806; font weight:bold;">Logout</span></a>
                         </li>
                     </ul>
 

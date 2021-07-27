@@ -35,12 +35,13 @@
                                              <th scope="col">No</th>
                                              <th scope="col">Username</th>
                                              <th scope="col">Nama Resep</th>
+                                             <th scope="col">Catatan</th>
                                              <th scope="col">Tanggal</th>
                                              <th scope="col">Status</th>
                                              <th scope="col">Action</th>
                                          </tr>
                                      </thead>
-                                     <tbody>
+                                     <tbody class="valuetablejadwal">
                                      </tbody>
                                  </table>
                              </div>
@@ -91,3 +92,4 @@
          </div>
      </div>
  </div>
+ <script src="<?= base_url() ?>js/B_jadwal.js"></script>
