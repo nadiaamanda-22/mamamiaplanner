@@ -40,7 +40,7 @@
 </ul>
     <!-- Navbar -->
     <div class="navbar-fixed">
-        <nav class=" amber lighten-4">
+        <nav class=" amber lighten-3">
             <div class="container" style="width:85%">
                 <div class="nav-wrapper ">
                 <a class="navbar-brand" href="#">
