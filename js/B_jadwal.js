@@ -12,12 +12,13 @@ $(document).ready(function() {
         if(jadwal.is_active==0){
           var html = `<span class="badge bg-success text-center mb-4">Aktif</span><span class="badge bg-danger">Tidak Aktif</span>`
         }else if(jadwal.is_active==1){
-          var html = `<a href="javascript:;" onclick="statOn(${jadwal.id_jadwal})"><span class="badge bg-success">Aktif</span></a>`
+          var html = `<a href="javascript:;" onclick="statOn(${jadwal.id_penjadwal})"><span class="badge bg-success">Aktif</span></a>`
         }else if(jadwal.is_active==2){
-          var html = `<a href="javascript:;" onclick="statOff(${jadwal.id_jadwal})"><span class="badge bg-danger">Tidak Aktif</span></a>`
+          var html = `<a href="javascript:;" onclick="statOff(${jadwal.id_penjadwal})"><span class="badge bg-danger">Tidak Aktif</span></a>`
         }
         let tbl_resep = jadwal.tbl_resep;
         let tbl_user  = jadwal.tbl_user
+
           $('.valuetablejadwal').append(`
            <tr>
               <th scope="row">${i+1}</th>
@@ -28,9 +29,9 @@ $(document).ready(function() {
               <td class="text-center">`+html+`</td>
               <td class="text-center">
                <div class="d-grid gap-2 d-md-block">
-                  <a href="javascript:;" onclick="detailJadwal(${jadwal.id_jadwal})"><span class="badge bg-secondary"><i class="fa fa-info"></i></span></a>
+                  <a href="javascript:;" onclick="detailJadwal(${jadwal.id_penjadwal})"><span class="badge bg-secondary"><i class="fa fa-info"></i></span></a>
                   <a href=""><span class="badge bg-warning "><i class="fa fa-edit"></i></span></a>
-                  <a href="javascript:;"><span class="badge bg-danger" onclick="deleteJadwal(${jadwal.id_jadwal})"><i class="fa fa-trash-alt"></i></span></a>
+                  <a href="javascript:;"><span class="badge bg-danger" onclick="deleteJadwal(${jadwal.id_penjadwal})"><i class="fa fa-trash-alt"></i></span></a>
               </div>
               </td>
           </tr>                 
@@ -64,7 +65,7 @@ $(document).ready(function() {
 function statOn(id){
 const data = 2;
 $.ajax({
-url : 'http://localhost:3000/jadwal/stat'+id,
+url : 'http://localhost:3000/jadwal/stat/'+id,
 type : 'PUT',
 data : {is_active:data},
 dataType : 'JSON',
@@ -80,7 +81,7 @@ success('Data jadwal Tidak Ditampilkan !!');
 function statOff(id){
 const data = 1;
 $.ajax({
-url : 'http://localhost:3000/jadwal/stat'+id,
+url : 'http://localhost:3000/jadwal/stat/'+id,
 type : 'PUT',
 data : {is_active:data},
 dataType : 'JSON',
@@ -92,37 +93,37 @@ success('Data jadwal Ditampilkan !!');
 })
 }
 
-function deleteJadwal(id){
-console.log(id);
-Swal.fire({
-title: 'Yakin Menghapus Jadwal?',
-text: "Data jadwal akan dihapus permanen",
-icon: 'warning',
-showCancelButton: true,
-confirmButtonColor: '#3085d6',
-cancelButtonColor: '#d33',
-confirmButtonText: 'Hapus',
-cancelButtonText : 'Batal'
-}).then((result) => {
-if (result.isConfirmed) {
-$.ajax({
-url : 'http://localhost:3000/jadwal/'+id,
-type : 'DELETE',
-dataType : 'JSON',
-success : function(data){
-Swal.fire(
-'Dihapus !!',
-'Data jadwal berhasil dihapus',
-'success'
-).then(function(){
-window.location = 'ManajemenJadwal';
-})
-}
-})
+    function deleteJadwal(id){
+          Swal.fire({
+          title: 'Yakin Menghapus Jadwal?',
+          text: "Data jadwal akan dihapus permanen",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Hapus',
+          cancelButtonText : 'Batal'
+          }).then((result) => {
+          if (result.isConfirmed) {
+          $.ajax({
+          url : 'http://localhost:3000/jadwal/'+id,
+          type : 'DELETE',
+          dataType : 'JSON',
+          success : function(data){
+            console.log(data)
+         Swal.fire(
+            'Dihapus !!',
+            'Data jadwal berhasil dihapus',
+            'success'
+          ).then(function(){
+            window.location = 'ManajemenJadwal';
+          })
+      }
+          })
 
-}
-})
-}
+          }
+          })
+    }
 
 function detailJadwal(id){
 var myModal = new bootstrap.Modal(document.getElementById('detailJadwal'))
@@ -167,12 +168,12 @@ $('.created_at').text(`${day} - ${month} - ${year}`)
 }
 
 function success(alert){
-Swal.fire({
-    icon: 'success',
-    title: ''+alert,
-    text: '',
-    time: 1000
-}).then(function() {
-    window.location = 'ManajemenJadwal';
-});
+  Swal.fire({
+            icon: 'success',
+            title: ''+alert,
+            text: '',
+            time: 1000
+        }).then(function() {
+            window.location = 'ManajemenJadwal';
+        });
 }

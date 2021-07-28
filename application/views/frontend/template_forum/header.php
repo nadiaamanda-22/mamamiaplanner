@@ -18,35 +18,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fredoka+One&family=Nunito:wght@700&family=Pacifico&display=swap" rel="stylesheet">
     <!-- css swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <!-- flaticon -->
     <link href="<?php echo base_url() ?>assets/uicons/css/uicons-regular-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?= base_url() ?>assets/materialize/css/menu.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-
+    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/menu.css'); ?>">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
     <!-- CSS Forum here -->
-    <!-- <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/carousel.min.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/slicknav.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/animate.min.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/magnific-popup.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/themify-icons.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/slick.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/nice-select.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/materialize/css/forumstyle.css"> -->
+    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/forumstyle.css'); ?>">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- penjadwalan -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/penjadwalan.css'); ?>">
+
+    <!-- Forum -->
+    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/forum.css'); ?>">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3f9a2074cf.js" crossorigin="anonymous"></script>
+
 </head>
-<script>
-    const base_url = '<?= base_url() ?>';
-    const id_user = '<?= $this->session->userdata('id_user') ?>'
-</script>
 
 <body>
     <ul id="dropdown1" class="dropdown-content">
@@ -77,6 +69,7 @@
                         <li><a href="<?php echo base_url() ?>penjadwalan" class="brown-text">Penjadwalan</a></li>
                         <li><a href="<?= base_url() ?>menu" class="brown-text">Menu</a></li>
                         <li><a href="<?= base_url() ?>forum" class="brown-text">Forum</a></li>
+                        <li><a href="<?= base_url() ?>Auth/logout" class="brown-text">Logout</a></li>
                     </ul>
                 </div>
             </div>

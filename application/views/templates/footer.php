@@ -12,10 +12,10 @@
               <div class="col l6 s12">
                 <h5 class="brown-text">Menu</h5>
                 <ul>
-                  <li><a class="brown-text text-lighten-3" href="#!">Beranda</a></li>
-                  <li><a class="brown-text text-lighten-3" href="#!">Pendjadwalan</a></li>
-                  <li><a class="brown-text text-lighten-3" href="#!">Menu </a></li>
-                  <li><a class="brown-text text-lighten-3" href="#!">Forum</a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url() ?>">Beranda</a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url() ?>penjadwalan">Pendjadwalan</a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url() ?>menu">Menu </a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url() ?>forum">Forum</a></li>
                 </ul>
               </div>
             </div>

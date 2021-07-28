@@ -6,6 +6,8 @@ $(document).ready(function() {
             type : 'GET',
             dataType : 'JSON',
             success : function(data){
+            
+            console.log(data)
 
             let langkahmasaks = data.data;
             $.each(langkahmasaks, (i, langkahmasak) =>{

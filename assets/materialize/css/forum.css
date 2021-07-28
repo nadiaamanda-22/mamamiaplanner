@@ -1,0 +1,57 @@
+.modalpenjadwalan2 {
+	height: 525px;
+}
+
+.modal-footer .keluar2 {
+	background-color: #616161;
+	margin-right: 10px !important;
+	border-radius: 5px;
+	margin-top: 50px !important;
+}
+
+.modal-footer .simpan2 {
+	background-color: #aa5806;
+	margin-right: 10px !important;
+	border-radius: 5px;
+	margin-top: 50px !important;
+}
+
+.widget_title {
+	font-family: "Sulphur Point" !important;
+}
+
+.blog_item_date {
+	background-color: #aa5806;
+}
+
+.kotaksearch .buttonsearch {
+	background-color: #aa5806 !important;
+
+}
+
+.kategori ul li p:hover {
+	color: burlywood;
+}
+
+.tag ul li a:hover {
+	background-color: burlywood !important;
+	color: white;
+}
+
+.blog_item_date:hover {
+	background-color: burlywood;
+	opacity: .8;
+}
+
+/* button floating action */
+.buttonfix .add {
+	background-color: #aa5806 !important;
+}
+
+.buttonfix .upload {
+	background-color: rgb(241, 192, 127) !important;
+}
+
+.buttonfix .request {
+	background-color: rgb(240, 136, 110) !important;
+}

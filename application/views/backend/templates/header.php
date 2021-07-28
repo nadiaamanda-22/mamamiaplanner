@@ -12,7 +12,7 @@
     <title>Admin Mamamia Planner - <?= $title; ?></title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/backend/assets/')   ?>plugins/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url() ?>assets/img/logo/logobaru.png">
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/backend/assets/')   ?>plugins/bower_components/chartist/dist/chartist.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/backend/assets/')   ?>plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">

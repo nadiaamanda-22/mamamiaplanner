@@ -14,58 +14,56 @@
 
    <div class="container menu2">
       <h4 class="judul-menu"><?= $result['total_data'] ?> Menu Tersedia</h4>
-       <div class="div">
-          <div class="row">
-             <div class="col-m12">
-                <div class="input-group">
-                  <button class="btn btn-outline-secondary dropdown-toggle dropdownfilter mt-4 " type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+      <div class="div">
+         <div class="row">
+            <div class="col-m12">
+               <div class="input-group">
+                  <button class="btn btn-outline-secondary dropdown-toggle dropdownfilter mt-4 " type="button" data-bs-toggle="dropdown" aria-expanded="false">Asal Masakan</button>
                   <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">Masakan Daerah</a></li>
-                     <li><hr class="dropdown-divider"></li>
                      <li><a class="dropdown-item" href="#">
-                          <form action="#">
+                           <form action="#">
                               <p>
                                  <label>
-                                 <input name="group1" type="radio" checked />
-                                 <span>Red</span>
+                                    <input name="group1" type="radio" checked />
+                                    <span>Bogor</span>
                                  </label>
                               </p>
                               <p>
                                  <label>
-                                 <input name="group1" type="radio" />
-                                 <span>Yellow</span>
+                                    <input name="group1" type="radio" />
+                                    <span>Jakarta</span>
                                  </label>
                               </p>
                               <p>
                                  <label>
-                                 <input class="with-gap" name="group1" type="radio"  />
-                                 <span>Green</span>
+                                    <input name="group1" type="radio" />
+                                    <span>Depok</span>
                                  </label>
                               </p>
                               <p>
                                  <label>
-                                 <input name="group1" type="radio" disabled="disabled" />
-                                 <span>Brown</span>
+                                    <input name="group1" type="radio" />
+                                    <span>Sulawesi</span>
                                  </label>
                               </p>
                            </form>
-                     </a></li>
+                        </a></li>
                   </ul>
                   <div class="input-field col s6 ">
-                  <input id="icon_telephone" type="tel" class="validate">
-                  <label for="icon_telephone">Telephone</label>
+                     <input id="icon_telephone" type="tel" class="key_resep_menu">
+                     <label for="icon_telephone">Masukan kata kunci resep.....</label>
+                  </div>
+                  <button type="button" class="btn btn-link brown mt-4"><i class="bi bi-search"></i></button>
                </div>
-                  <button type="button" class="btn btn-link brown mt-4" ><i class="bi bi-search"></i></button>
-               </div>
-             </div>
-          </div>
-       </div>
-      <div class="row">
+            </div>
+         </div>
+      </div>
+      <div class="row box_menu">
          <?php foreach (array_slice($reseps, 0, 9) as $resep) : ?>
             <div class="col-sm-4">
                <div class="card menu">
                   <div class="card-image waves-effect waves-block waves-light">
-                     <img class="activator responsive-img" src="http://localhost:3000/<?= $resep['gambar_resep']  ?>">
+                     <img class="activator responsive-img" src="http://localhost:3000/<?= $resep['gambar_resep']  ?>" width="100%" height="100%">
                   </div>
                   <div class="card-content">
                      <span class="card-title activator" style="font-weight: bold;"><?= $resep['nama_resep'] ?>

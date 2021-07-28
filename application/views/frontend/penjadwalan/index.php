@@ -99,14 +99,14 @@
                                 <div class="swiper-container mySwiper">
                                   <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                      <img class="materialboxed center" src="<?php echo base_url() ?>assets/img/slider/2.png">
+                                      <img class="materialboxed center" src="http://localhost:3000/<?= $jadwals[$found_key]['tbl_resep']['gambar_resep'] ?>">
                                       <h5><?= $jadwals[$found_key]['for_date'] ?></h5>
                                       <h6><?= $jadwals[$found_key]['tbl_resep']['nama_resep'] ?></h6>
                                       <h6><?= $jadwals[$found_key]['tbl_resep']['asal_masakan'] ?></h6>
                                       <p><?= $jadwals[$found_key]['tbl_resep']['kalori'] ?> Kalori/Porsi</p>
 
                                       <a class="btn edit" href="#" role="button"><i class="bi bi-pencil-square text-white"></i></a>
-                                      <a class="btn hapus" href="#" role="button"><i class="bi bi-trash text-white"></i></a>
+                                      <button class="btn hapus" href="javascript;" onclick="deleteUserjadwal(<?= $jadwals[$found_key]['id_penjadwal'] ?>)" role="button"><i class="bi bi-trash text-white"></i></button>
                                     </div>
 
                                     <div class="swiper-slide">

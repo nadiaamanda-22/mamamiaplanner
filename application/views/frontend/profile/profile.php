@@ -1,5 +1,3 @@
-<!-- Halaman User Profile -->
-
 <!-- CSS halaman profile -->
 <style type="text/css">
    .profil img {
@@ -40,7 +38,6 @@
 <!-- profile -->
 
 <div class="container profil">
-
    <div class="row">
 
       <div class="col-sm-4  text-center">
@@ -78,7 +75,7 @@
          <?php else : ?>
             <?php foreach ($post_user as $key) : ?>
                <div class="col-md-3">
-                  <img src="<?= base_url('assets/img/menu/menu/ayam_woku.jpg'); ?>" class="responsive-img" style="margin-top: 20px;">
+                  <img src="http://localhost:3000/<?= $key['gambar'] ?>" class="responsive-img" style="margin-top: 20px;">
                </div>
             <?php endforeach; ?>
          <?php endif; ?>

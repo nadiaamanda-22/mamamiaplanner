@@ -6,11 +6,11 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="dashboard.html" style="background-color:#ffecb3;">
+                    <a class="navbar-brand" href="<?= base_url() ?>admin" style="background-color:#ffecb3;">
                         <!-- Logo icon -->
                         <b class="logo-icon">
                             <!-- Dark Logo icon -->
-                            <img src="<?= base_url('assets/img/logo/') ?>logobaru-removebg-preview.png" style="width: 80px; max-width: 100%; display:block;  height: auto;" />
+                            <img src="<?php echo base_url() ?>assets/img/logo/logobaru.png" style="width: 50px; max-width: 100%; display:block;  height: auto;" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->

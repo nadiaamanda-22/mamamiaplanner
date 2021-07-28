@@ -238,6 +238,38 @@ $('.modal-trigger').on('click', function(){
 //   		return new Date(year, month, 0).getDate();
 // }
 
+function deleteUserjadwal(id){
+            Swal.fire({
+            title: 'Yakin Menghapus Jadwal?',
+            text: "Data jadwal akan dihapus permanen",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Hapus',
+            cancelButtonText : 'Batal'
+            }).then((result) => {
+            if (result.isConfirmed) {
+            $.ajax({
+            url : 'http://localhost:3000/jadwal/'+id,
+            type : 'DELETE',
+            dataType : 'JSON',
+            success : function(data){
+                console.log(data)
+            Swal.fire(
+                'Dihapus !!',
+                'Data jadwal berhasil dihapus',
+                'success'
+            ).then(function(){
+                window.location = 'penjadwalan';
+            })
+        }
+            })
+
+            }
+            })
+}
+
 $('.add_penjadwalan_user').on('click', function(){
     $('#form_penjadwalan_user')[0].reset();
     $('#resep_notfound').html('');

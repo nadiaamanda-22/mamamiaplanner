@@ -21,9 +21,11 @@
 
    <!-- gambar -->
    <div class="woku" style="text-align: center;">
-      <img src="http://localhost:3000/<?= $resep['gambar_resep'] ?>">
+      <img src="http://localhost:3000/<?= $resep['gambar_resep'] ?>" width="100%" height="100%">
       <!-- Kalori -->
       <h5 style="color: #aa5806;">Kalori : <?= $resep['kalori'] ?> / Porsi</h5>
+      <br>
+      <h5 style="color: #aa5806;">Asal Masakan : <?= $resep['asal_masakan'] ?></h5>
    </div>
 
    <!-- Bahan2 -->
@@ -41,7 +43,7 @@
    <div class="cara">
       <h4 style="font-size: 35px;">Cara Membuat</h4>
 
-      <ol type="A">
+      <ol type="1">
          <?php foreach ($resep['tbl_langkah_masaks'] as $m) : ?>
             <li><?= $m['langkah_masak'] ?></li>
          <?php endforeach; ?>

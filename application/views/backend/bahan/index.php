@@ -32,11 +32,11 @@
                                 <table class="table table-hover  mt-4" id="tablebahan" width="100%">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th scope="col">No</th>
-                                            <th scope="col">Nama Bahan</th>
-                                            <th scope="col">Nama Resep</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Action</th>
+                                            <th scope="col" class="text-center">No</th>
+                                            <th scope="col" class="text-center">Nama Bahan</th>
+                                            <th scope="col" class="text-center">Nama Resep</th>
+                                            <th scope="col" class="text-center">Status</th>
+                                            <th scope="col" class="text-center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody class="valuetablebahan">
@@ -80,48 +80,48 @@
     <!-- ============================================================== -->
     <!-- End footer -->
     <!-- ============================================================== -->
-</div>
 
-<!-- Modal -->
-<div class="modal fade" id="bahanModal" tabindex="-1" aria-labelledby="bahanModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="bahanModalLabel">Tambah Data Bahan</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form action="" method="post" enctype="multipart/form-data" id="formBahan">
 
-                    <div class="row">
-                        <div class="mb-3">
-                            <input class="form-control" list="datalistOptions" id="key_resep" name="key_resep" placeholder="Masukan keyword resep...." autocomplete="off">
-                            <div id="resep_notfound" class="form-text text-danger"></div>
-                            <datalist id="datalistOptions">
-                            </datalist>
-                            <input type="hidden" class="form-control" id="id_resep" name="id_resep">
-                        </div>
-                        <div class="mb-3">
-                            <label for="bahan" class="form-label">Bahan</label>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <input type="text" class="form-control bahan" name="bahan[]" autocomplete="off">
-                                </div>
-                                <div class="col-md-2">
-                                    <button type="button" class="btn btn-secondary btn-sm" onclick="plusBahan()"><i class="fa fa-plus"></i></button>
-                                </div>
+    <!-- Modal -->
+    <div class="modal fade" id="bahanModal" tabindex="-1" aria-labelledby="bahanModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bahanModalLabel">Tambah Data Bahan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" enctype="multipart/form-data" id="formBahan">
+
+                        <div class="row">
+                            <div class="mb-3">
+                                <input class="form-control" list="datalistOptions" id="key_resep" name="key_resep" placeholder="Masukan keyword resep...." autocomplete="off">
+                                <div id="resep_notfound" class="form-text text-danger"></div>
+                                <datalist id="datalistOptions">
+                                </datalist>
+                                <input type="hidden" class="form-control" id="id_resep" name="id_resep">
                             </div>
-                            <div class="multipleBahan"><br></div>
+                            <div class="mb-3">
+                                <label for="bahan" class="form-label">Bahan</label>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control bahan" name="bahan[]" autocomplete="off">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-secondary btn-sm" onclick="plusBahan()"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="multipleBahan"><br></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" id="cancel_bahan" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                        <button type="submit" id="submit_bahan" class="btn btn-primary">Tambah Bahan</button>
-                    </div>
-                </form>
+                        <div class="modal-footer">
+                            <button type="button" id="cancel_bahan" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <button type="submit" id="submit_bahan" class="btn btn-primary">Tambah Bahan</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="<?= base_url() ?>js/B_bahan.js"></script>
+    <script src="<?= base_url() ?>js/B_bahan.js"></script>

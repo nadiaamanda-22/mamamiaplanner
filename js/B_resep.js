@@ -53,6 +53,10 @@
             })
   });
 
+$('.btn_resep').on('click', function(){
+  $('#formResep')[0].reset();
+})
+
 function detailResep(id){
   var myModal = new bootstrap.Modal(document.getElementById('detailResep'))
   myModal.show()
@@ -66,7 +70,12 @@ function detailResep(id){
       $('.d_namaResep').text(resep.nama_resep);
       $('.d_deskripsiResep').text(resep.deskripsi_resep);
       $('.d_kalori').text(resep.kalori);
-      $('.image').html(`<img src="http://localhost:3000/${resep.gambar_resep}" width="250" height="250" alt=""></img>`)
+      $('.image').html(`<img src="http://localhost:3000/${resep.gambar_resep}" width="250" height="250" alt=""></img>`);
+      
+      let thumb = resep.link_youtube.split('=')
+
+      $("iframe").attr('src',`https://www.youtube.com/embed/${thumb[1]}`)
+
 
       let date = new Date(resep.created_at);
 

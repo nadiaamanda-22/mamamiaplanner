@@ -55,15 +55,18 @@ class Auth extends CI_controller
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('frontend/registrasi/index');
         } else {
+            $password = $this->input->post('password1', true);
             $data = [
                 'username' => $this->input->post('username'),
                 'email_user' => $this->input->post('email'),
-                'password_user' => md5($this->input->post('password')),
+                'password_user' => md5(urldecode($password)),
                 'full_name' => 'mamamia-' . uniqid(),
                 'foto_user' => 'default.jpg',
                 'role_id' => 12,
-                'is_active' =>  date('j M Y')
+                'is_active' =>  1,
             ];
+
+
             $result = $this->Auth_Model->registrasiUser($data);
 
             if ($result['status'] == 400) {
