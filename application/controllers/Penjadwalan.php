@@ -12,6 +12,11 @@
             }
         }
 
+        if ($this->session->userdata('role_id') == 11) {
+            redirect('helper/index.html');
+        }
+
+
         $this->load->model('Penjadwalan_Model');
     }
         public function index (){

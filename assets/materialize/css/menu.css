@@ -1,103 +1,114 @@
 body {
-    font-family: 'Sulphur Point';
-} 
+	font-family: 'Sulphur Point';
+	}
+
+.caption h3 {
+	font-family: 'caveat';
+}
 
 /* header */
 .nav-wrapper img {
-    width: 77px;
-    margin-top: 5px;
+	width: 77px;
+	margin-top: 5px;
 }
 
 /* Menu */
 .slider img {
-    filter: brightness(50%);
+	filter: brightness(50%);
 }
 
 .slider h3 {
-    margin-top: 90px;
+	margin-top: 90px;
 }
 
-.container h4{
-    text-align: center;
-    font-family: 'Caveat';
-    color: #aa5806;
-    margin-top: 50px;
+.container h4 {
+	text-align: center;
+	font-family: 'Caveat';
+	color: #aa5806;
+	margin-top: 50px;
 }
 
 .card-title {
-    color: #aa5806;
+	color: #aa5806;
 }
 
 .card-content button {
-    color: #aa5806;
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid #dddddd;
-    padding: 5px;
-    font-family: 'Sulphur Point';
+	color: #aa5806;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid #dddddd;
+	padding: 5px;
+	font-family: 'Sulphur Point';
+}
+
+.card-reveal .card-title {
+	color: #aa5806 !important;
+	font-weight: 500;
+	font-family: 'Sulphur Point';
+}
+
+.card-reveal {
+	font-size: 16px;
+}
+
+.buttoncari:hover {
+	color: white !important;
 }
 
 /* end menu */
 
 /* footer */
 footer .footer-copyright {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 
- }
+}
 
- section {
-     padding-top: 50px;
- }
+section {
+	padding-top: 50px;
+}
 
- .team .name {
-    display: inline-block;
-    padding-left: 10px;
- }
+.team .name {
+	display: inline-block;
+	padding-left: 10px;
+}
 
- .team .name p {
-     font-size: 12px;
- }
+.team .name p {
+	font-size: 12px;
+}
 
- .name span{
-     font-weight: bold;
-     font-size: 18px;
-     color: burlywood;
- }
+.name span {
+	font-weight: bold;
+	font-size: 18px;
+	color: burlywood;
+}
 
- footer .footer-copyright .textcopy {
-    padding-top: 20px;
+footer .footer-copyright .textcopy {
+	padding-top: 20px;
 
- }
+}
 
- footer .content {
-     margin-bottom: 30px;
+footer .content {
+	margin-bottom: 30px;
 
- }
+}
 
- footer .content img {
-     height: 220px;
- }
+footer .content img {
+	height: 220px;
+}
 
- footer .content .logo {
-     margin-left: 38px;
-     font-weight: bold;
- }
+footer .content .logo {
+	margin-left: 38px;
+	font-weight: bold;
+}
 
- 
+.bahan h4 {
+	font-family: 'Sulphur Point';
+}
 
+.cara h4 {
+	font-family: 'Sulphur Point';
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+.link h4 {
+	font-family: 'Sulphur Point';
+}

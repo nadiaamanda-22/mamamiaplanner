@@ -33,7 +33,7 @@
         <i class="large material-icons">add</i>
     </a>
     <ul>
-        <li><a class="btn-floating request"><i class="fas fa-concierge-bell"></i></a></li>
+        <li><a href="<?= base_url() ?>request" class="btn-floating request"><i class="fas fa-concierge-bell"></i></a></li>
         <li><a href="#modal2" class="btn-floating upload modal-trigger addpost"><i class="bi bi-upload"></i></a></li>
     </ul>
 </div>

@@ -55,3 +55,30 @@
 .buttonfix .request {
 	background-color: rgb(240, 136, 110) !important;
 }
+
+.request .judul {
+	margin-left: 10px;
+}
+
+.send button {
+	border: 1px solid #aa5806;
+	margin-left: 10px;
+	width: 180px;
+}
+
+.send button h5 {
+	font-size: 18px;
+	margin-top: 5px;
+	color: black;
+	font-weight: 700;
+	font-family: "Sulphur Point" !important;
+	text-transform: none;
+}
+
+.send button:hover {
+	background-color: #aa5806;
+}
+
+.textarea textarea {
+	height: 250px !important;
+}

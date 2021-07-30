@@ -41,6 +41,11 @@ $(document).ready(function() {
             })
 });
 
+$('.btnBahan').on('click', function(){
+  $('#formBahan')[0].reset();
+    $('.multipleBahan').html('')
+})
+
 $('#key_resep').on('keyup', function(){
     let keyword = $('#key_resep').val();
     $.ajax({

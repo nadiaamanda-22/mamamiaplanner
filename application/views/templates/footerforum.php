@@ -10,14 +10,14 @@
                 <img src="<?php echo base_url() ?>assets/img/logo/mamamia.png" alt="" class="left">
               </div>
               <div class="col l6 s12">
-                  <h5 class="brown-text">Menu</h5>
-                  <ul>
-                    <li><a class="brown-text text-lighten-3" href="#!">Beranda</a></li>
-                    <li><a class="brown-text text-lighten-3" href="#!">Pendjadwalan</a></li>
-                    <li><a class="brown-text text-lighten-3" href="#!">Menu </a></li>
-                    <li><a class="brown-text text-lighten-3" href="#!">Forum</a></li>
-                  </ul>
-                </div>
+                <h5 class="brown-text">Menu</h5>
+                <ul>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url() ?>">Beranda</a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url() ?>penjadwalan">Pendjadwalan</a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url() ?>menu">Menu </a></li>
+                  <li><a class="brown-text text-lighten-3" href="<?= base_url() ?>forum">Forum</a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="footer-copyright amber lighten-3">
@@ -28,40 +28,40 @@
         </footer>
         <!-- end -->
         <!-- Modal Structure -->
-   <div id="modal2" class="modal modalpenjadwalan2">
-    <div class="modal-content">
-      <h4>Bagikan Resep Masakan</h4>
-      <div class="divider"></div>
-      <div class="content">
-          <div class="row">
-            <div class="col s12">
+        <div id="modal2" class="modal modalpenjadwalan2">
+          <div class="modal-content">
+            <h4>Bagikan Resep Masakan</h4>
+            <div class="divider"></div>
+            <div class="content">
               <div class="row">
-               <div class="input-group mt-3">
-                <input type="file" class="form-control" id="inputGroupFile02" placeholder="Recipient's username">
+                <div class="col s12">
+                  <div class="row">
+                    <div class="input-group mt-3">
+                      <input type="file" class="form-control" id="inputGroupFile02" placeholder="Recipient's username">
+                    </div>
+                  </div>
+                </div>
+                <h5>Deskripsi</h5>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
               </div>
-              </div>
-          </div>
-          <h5>Deskripsi</h5>
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             </div>
           </div>
-      </div>
-    </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect btn  keluar2">Keluar</a>
-        <a href="#!" class="modal-close waves-effect waves-green btn simpan2">Simpan</a>
-      </div>
-  </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect btn  keluar2">Keluar</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn simpan2">Simpan</a>
+          </div>
+        </div>
 
-        <script> 
-        document.addEventListener('DOMContentLoaded', function() {
-          var elems = document.querySelectorAll('.fixed-action-btn');
-          var instances = M.FloatingActionButton.init(elems, {
-            direction: 'top',
-            hoverEnabled: false
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+              direction: 'top',
+              hoverEnabled: false
+            });
           });
-        }); 
         </script>
 
         <script>
@@ -74,6 +74,7 @@
         </script>
 
         <!--JavaScript at end of body for optimized loading-->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>assets/materialize/js/script.js"></script>
@@ -156,15 +157,16 @@
           });
         </script>
 
-<script>
-  const modal = document.querySelectorAll('.modal');
-  M.Modal.init(modal);
+        <script>
+          const modal = document.querySelectorAll('.modal');
+          M.Modal.init(modal);
 
-  const select = document.querySelectorAll('.select');
-  M.Select.init(select);
-  </script>
-  
+          const select = document.querySelectorAll('.select');
+          M.Select.init(select);
+        </script>
 
 
-  </body>
-</html>
+
+        </body>
+
+        </html>

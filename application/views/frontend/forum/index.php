@@ -12,7 +12,7 @@
 
 <!--================Blog Area =================-->
 <section class="blog_area section-padding">
-    <div class="container" style="width:90%">
+    <div class="container" style="width:100%">
         <div class="row">
             <div class="col-lg-8 mb-5 mb-lg-0">
                 <div class="blog_left_sidebar">
@@ -40,13 +40,46 @@
                                     <p><?= $forum['deskripsi'] ?>.</p>
                                 <?php endif; ?>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> <?= $forum['tbl_user']['full_name'] ?></a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> <?= $jml_komentar ?> Komentar</a></li>
+                                    <li><a href="javascript;"><i class="fa fa-user"></i> <?= $forum['tbl_user']['username'] ?></a></li>
+                                    <li><a href="javascript;" onclick="viewKomentar()"><i class="fa fa-comments"></i> <?= $jml_komentar ?> Komentar</a></li>
                                 </ul>
+                                <?php $komentar = $forum['tbl_komentar_posts']; ?>
+                                <?php if ($komentar) : ?>
+                                    <div class="comments-area">
+                                        <div class="comment-list">
+                                            <?php foreach ($komentar as $komen) : ?>
+                                                <div class="single-comment justify-content-between d-flex">
+                                                    <div class="user justify-content-between d-flex">
+                                                        <div class="thumb">
+                                                            <img src="assets/img/comment/comment_1.png" alt="">
+                                                        </div>
+                                                        <div class="desc">
+                                                            <p class="comment">
+                                                                <?= $komen['komentar'] ?>
+                                                            </p>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="d-flex align-items-center">
+                                                                    <h5>
+                                                                        <a href="#"><?= $komen['tbl_user']['username'] ?></a>
+                                                                    </h5>
+                                                                    <p class="date"><?php $tanggal = date('l, d F Y', strtotime($komen['tanggal_komentar']));
+                                                                                    echo $tanggal; ?></p>
+                                                                </div>
+                                                                <div class="reply-btn">
+                                                                    <a href="#" class="btn-reply text-uppercase">reply</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
                             </div>
                         </article>
                     <?php endforeach; ?>
-
+                    <!-- 
                     <ul class="pagination justify-content-center d-flex">
                         <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
                         <li class="active"><a href="#!">1</a></li>
@@ -55,7 +88,7 @@
                         <li class="waves-effect"><a href="#!">4</a></li>
                         <li class="waves-effect"><a href="#!">5</a></li>
                         <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
             <div class="col-lg-4">

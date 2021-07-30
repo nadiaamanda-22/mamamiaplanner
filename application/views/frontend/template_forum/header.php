@@ -38,6 +38,8 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3f9a2074cf.js" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -47,7 +49,7 @@
     </ul>
     <!-- Navbar -->
     <div class="navbar-fixed">
-        <nav class=" amber lighten-4">
+        <nav class="amber lighten-3">
             <div class="container" style="width:85%">
                 <div class="nav-wrapper ">
                     <a class="navbar-brand" href="#">
@@ -69,7 +71,6 @@
                         <li><a href="<?php echo base_url() ?>penjadwalan" class="brown-text">Penjadwalan</a></li>
                         <li><a href="<?= base_url() ?>menu" class="brown-text">Menu</a></li>
                         <li><a href="<?= base_url() ?>forum" class="brown-text">Forum</a></li>
-                        <li><a href="<?= base_url() ?>Auth/logout" class="brown-text">Logout</a></li>
                     </ul>
                 </div>
             </div>

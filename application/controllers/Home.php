@@ -9,6 +9,8 @@
                 redirect('auth');
             }
         }
+
+
     }
         public function index (){
         $this->load->view('templates/header');

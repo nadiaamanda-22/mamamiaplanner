@@ -21,10 +21,11 @@
 
    <!-- gambar -->
    <div class="woku" style="text-align: center;">
-      <img src="http://localhost:3000/<?= $resep['gambar_resep'] ?>" width="100%" height="100%">
+      <img src="http://localhost:3000/<?= $resep['gambar_resep'] ?>" width="60%" height="60%">
       <!-- Kalori -->
       <h5 style="color: #aa5806;">Kalori : <?= $resep['kalori'] ?> / Porsi</h5>
       <br>
+
       <h5 style="color: #aa5806;">Asal Masakan : <?= $resep['asal_masakan'] ?></h5>
    </div>
 

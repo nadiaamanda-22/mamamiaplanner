@@ -25,7 +25,7 @@
                 <div class="white-box">
                     <div class="row mb-4">
                         <div class="col-md-4 mb-3">
-                            <button type="button" class="btn btn-primary fas-fa-fw-fas-plus" data-bs-toggle="modal" data-bs-target="#langkahmasakModal"><i class="fas fa-plus"></i> Tambah Data Langkah Memasak</button>
+                            <button type="button" class="btn btn-primary fas-fa-fw-fas-plus btnLangkahMasak" data-bs-toggle="modal" data-bs-target="#langkahmasakModal"><i class="fas fa-plus"></i> Tambah Data Langkah Memasak</button>
                         </div>
                         <div class="row">
                             <div class="col">

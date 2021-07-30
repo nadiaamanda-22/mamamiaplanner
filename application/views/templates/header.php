@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/materialize/css/menu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,8 +51,8 @@
 
 <body>
     <ul id="dropdown1" class="dropdown-content">
-        <li><a href="<?= base_url() ?>profile">Profil</a></li>
-        <li><a href="<?= base_url() ?>Auth/logout">Logout</a></li>
+        <li><a href="<?= base_url() ?>profile" class="brown-text">Profil</a></li>
+        <li><a href="<?= base_url() ?>Auth/logout" class="brown-text">Logout</a></li>
     </ul>
     <!-- Navbar -->
     <div class="navbar-fixed">
@@ -72,7 +73,7 @@
                         <?php endif; ?>
 
                     </ul>
-                    <ul class="menu right hide-on-med-and-down">
+                    <ul class="menu right hide-on-med-and-down login">
                         <li><a href="<?php echo base_url() ?>home" class="brown-text">Beranda</a></li>
                         <li><a href="<?php echo base_url() ?>penjadwalan" class="brown-text">Penjadwalan</a></li>
                         <li><a href="<?= base_url() ?>menu" class="brown-text">Menu</a></li>

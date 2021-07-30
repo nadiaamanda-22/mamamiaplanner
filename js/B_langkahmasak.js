@@ -70,6 +70,11 @@ $('#key_resep').on('keyup', function(){
     })
 })
 
+$('.btnLangkahMasak').on('click', function(){
+  $('#formlangkahmasak')[0].reset();
+    $('.multiplelangkahmasak').html('')
+})
+
 function pluslangkahmasak(){
   let html = `
   <div class="mb-3" id="tambah_langkahmasak">

@@ -11,6 +11,11 @@ class Forum extends CI_Controller
             }
         }
 
+        if ($this->session->userdata('role_id') == 11) {
+            redirect('helper/index.html');
+        }
+
+
         $this->load->model('Forum_Model');
     }
 

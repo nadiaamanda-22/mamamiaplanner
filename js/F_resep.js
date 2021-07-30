@@ -25,7 +25,7 @@ $('.key_resep_menu').on('keyup', function(){
 
 
                 $('.box_menu').append(`<div class="col-sm-4">
-               <div class="card menu">
+               <div class="card menu"  style="max-height: 350px;">
                   <div class="card-image waves-effect waves-block waves-light">
                      <img class="activator responsive-img" src="http://localhost:3000/${res.gambar_resep}">
                   </div>

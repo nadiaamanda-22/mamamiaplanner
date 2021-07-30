@@ -3,8 +3,8 @@
             <ul class="slides">
                 <li>
                     <img src="<?php echo base_url() ?>assets/img/slider/1.png"> <!-- random image -->
-                    <div class="caption center-align">
-                        <h3 class="welcome">Selamat Datang</h3>
+                    <div class="caption center-align caption1">
+                        <p class="welcome">Selamat Datang</p>
                         <h3 class="orange-text amber-text text-lighten-3 judul ">Mamamia <br> Planner</h3>
                         <h5 class="light grey-text text-lighten-3">Pilihan Terbaik Untuk Mama Hebat.</h5>
                     </div>
@@ -49,7 +49,7 @@
 
             <div class="container center mama">
                 <h3>"Pilihan Terbaik <br> Untuk Mama Hebat"</h3>
-                <a href="#!" class="btn center  brown lighten-1 waves-effect waves-orange go">
+                <a href="<?= base_url() ?>penjadwalan" class="btn center  brown lighten-1 waves-effect waves-orange go">
                     <p class="white-text">Mulai Masak!</p>
                 </a>
             </div>

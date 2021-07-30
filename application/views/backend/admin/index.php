@@ -54,7 +54,7 @@
                              <div>
                              </div>
                          </li>
-                         <li class="ms-auto"><span class="counter text-info menu_favorit">911 Menu Favorit</span>
+                         <li class="ms-auto"><span class="counter text-info menu_favorit">Kue Balok</span>
                          </li>
                      </ul>
                  </div>

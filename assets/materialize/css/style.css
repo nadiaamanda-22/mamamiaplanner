@@ -3,6 +3,19 @@ body {
 }
 
 /* Navbar */
+.navbar-brand span {
+	font-family: 'caveat';
+	font-size: 22px;
+}
+
+.caption1 h3 {
+	font-family: 'caveat' !important;
+}
+
+.dropdown-trigger:hover {
+	background-color: burlywood !important;
+}
+
 
 .dropmenu li a {
 	text-decoration: none !important;
@@ -26,11 +39,11 @@ h5 {
 	font-weight: bold;
 }
 .slider .judul {
-	font-size: 50px;
+	font-size: 60px !important;
 }
 .slider .welcome {
 	font-family: "Pacifico", cursive;
-	font-size: 30px;
+	font-size: 45px;
 }
 
 .slider h5 {
@@ -60,7 +73,7 @@ h5 {
 }
 
 .login li a:hover {
-	background-color: lightsalmon;
+	background-color: burlywood;
 	color: white !important;
 }
 

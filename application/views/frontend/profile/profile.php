@@ -51,9 +51,10 @@
          <h3 class="display-4"><?= $profile['username'] ?></h3>
 
          <!-- email -->
-         <p class="lead"><?= $profile['email_user'] ?></p>
+         <p class="lead"><?= $profile['full_name'] ?></p>
 
          <!-- pengaturan akun -->
+         <br>
          <a href="<?= base_url('profile/pengaturan/'); ?><?= $profile['id_user'] ?>" class="waves-effect waves-light btn">Pengaturan Akun</a>
       </div>
    </div>
@@ -74,8 +75,8 @@
             <h4 style="font-size: 35px;">belum ada postingan</h4>
          <?php else : ?>
             <?php foreach ($post_user as $key) : ?>
-               <div class="col-md-3">
-                  <img src="http://localhost:3000/<?= $key['gambar'] ?>" class="responsive-img" style="margin-top: 20px;">
+               <div class="col-md-3" style="height: 250px;">
+                  <img src="http://localhost:3000/<?= $key['gambar'] ?>" class="responsive-img" style="margin-top: 20px;" height="250px" width="100%">
                </div>
             <?php endforeach; ?>
          <?php endif; ?>

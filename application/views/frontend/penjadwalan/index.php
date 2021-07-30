@@ -61,7 +61,7 @@
         </select>
       </div>
       <div class="col-md-4 mt-1 mb-3 ">
-        <button type="button" class="btn btn-link brown"><i class="bi bi-search"></i></button>
+        <button type="button" class="btn btn-link brown button_cari"><i class="bi bi-search"></i></button>
       </div>
     </div>
   </div>
@@ -99,7 +99,7 @@
                                 <div class="swiper-container mySwiper">
                                   <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                      <img class="materialboxed center" src="http://localhost:3000/<?= $jadwals[$found_key]['tbl_resep']['gambar_resep'] ?>">
+                                      <img class="materialboxed align-center" src="http://localhost:3000/<?= $jadwals[$found_key]['tbl_resep']['gambar_resep'] ?>" height="150px">
                                       <h5><?= $jadwals[$found_key]['for_date'] ?></h5>
                                       <h6><?= $jadwals[$found_key]['tbl_resep']['nama_resep'] ?></h6>
                                       <h6><?= $jadwals[$found_key]['tbl_resep']['asal_masakan'] ?></h6>

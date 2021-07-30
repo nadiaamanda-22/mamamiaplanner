@@ -83,29 +83,30 @@
                     <form action="" method="post" enctype="multipart/form-data" id="formResep">
                         <div class="mb-3">
                             <label for="nama_resep" class="form-label">Nama Resep</label>
-                            <input type="text" class="form-control" name="nama_resep" id="nama_resep" autocomplete="FALSE">
-                            <div id="nama_resep_error" class="form-text" style="color:red;"></div>
+                            <input type="text" class="form-control" name="nama_resep" id="nama_resep" autocomplete="off">
+                            <div id=" nama_resep_error" class="form-text" style="color:red;">
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="deskripsi_resep" class="form-label">Deskripsi</label>
                             <div class="form-floating">
-                                <textarea class="form-control" name="deskripsi_resep" id="deskripsi_resep" style="height: 100px" autocomplete="FALSE"></textarea>
-                                <div id="deskripsi_resep_error" class="form-text" style="color:red;"></div>
+                                <textarea class="form-control" name="deskripsi_resep" id="deskripsi_resep" style="height: 100px" autocomplete="off"></textarea>
+                                <div id=" deskripsi_resep_error" class="form-text" style="color:red;"></div>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="link_youtube" class="form-label">Link Youtube</label>
-                            <input type="text" class="form-control" name="link_youtube" id="link_youtube" autocomplete="FALSE">
+                            <input type="text" class="form-control" name="link_youtube" id="link_youtube" autocomplete="off">
                             <div id="link_youtube_error" class="form-text" style="color:red;"></div>
                         </div>
                         <div class="mb-3">
                             <label for="kalori" class="form-label">Kalori per porsi</label>
-                            <input type="text" class="form-control" name="kalori" id="kalori" autocomplete="FALSE">
+                            <input type="text" class="form-control" name="kalori" id="kalori" autocomplete="off">
                             <div id="kalori_error" class="form-text" style="color:red;"></div>
                         </div>
                         <div class="mb-3">
                             <label for="asal_masakan" class="form-label">Asal Masakan</label>
-                            <input type="text" class="form-control" name="asal_masakan" id="asal_masakan" autocomplete="FALSE">
+                            <input type="text" class="form-control" name="asal_masakan" id="asal_masakan" autocomplete="off">
                             <div id="asal_masakan_error" class="form-text" style="color:red;"></div>
                         </div>
                         <div class="mb-3">

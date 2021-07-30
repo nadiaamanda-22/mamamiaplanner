@@ -5,8 +5,8 @@
 
     <title>Mamamia Planner</title>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url() ?>assets/img/logo/logobaru.png">
-     <!-- Bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -26,44 +26,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS Forum here -->
-      <link rel="stylesheet" href="<?= base_url('assets/materialize/css/forumstyle.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/forumstyle.css'); ?>">
 
-      <!-- penjadwalan -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-      <link rel="stylesheet" href="<?= base_url('assets/materialize/css/penjadwalan.css'); ?>">
+    <!-- penjadwalan -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/penjadwalan.css'); ?>">
 
-      <!-- Forum -->
-      <link rel="stylesheet" href="<?= base_url('assets/materialize/css/forum.css'); ?>">
+    <!-- Forum -->
+    <link rel="stylesheet" href="<?= base_url('assets/materialize/css/forum.css'); ?>">
 
-      <!-- Font Awesome -->
-      <script src="https://kit.fontawesome.com/3f9a2074cf.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3f9a2074cf.js" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
+<script>
+    const base_url = '<?= base_url() ?>';
+    const id_user = '<?= $this->session->userdata('id_user') ?>'
+</script>
+
 <body>
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">Profil</a></li>
-  <li><a href="#!">Logout</a></li>
-</ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="<?= base_url() ?>profil">Profil</a></li>
+        <li><a href="<?= base_url() ?>logout">Logout</a></li>
+    </ul>
     <!-- Navbar -->
     <div class="navbar-fixed">
-        <nav class=" amber lighten-4">
+        <nav class="amber lighten-3">
             <div class="container" style="width:85%">
                 <div class="nav-wrapper ">
-                <a class="navbar-brand" href="#">
-					<img
-						src="<?php echo base_url() ?>assets/img/logo/logobaru.png"
-						alt=""
-						width="30"
-						height="63"
-						class="d-inline-block align-text-center mb-1"
-					/>
-					<span>Mamamia Planner</span>
-				</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="<?php echo base_url() ?>assets/img/logo/logobaru.png" alt="" width="30" height="63" class="d-inline-block align-text-center mb-1" />
+                        <span>Mamamia Planner</span>
+                    </a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons brown-text">menu</i></a>
                     <ul class=" right hide-on-med-and-down login">
 
-                    <?php if ($this->session->userdata('username') != null) : ?>
+                        <?php if ($this->session->userdata('username') != null) : ?>
                             <li><a href="#!" class="brown-text dropdown-trigger" data-target="dropdown1"><i class=" material-icons left">account_circle</i><?= $this->session->userdata('username') ?></a></li>
                         <?php else : ?>
                             <li><a href="<?php echo base_url() ?>Auth" class="brown-text"><i class=" material-icons left">account_circle</i>Masuk / Daftar</a></li>
@@ -75,7 +75,6 @@
                         <li><a href="<?php echo base_url() ?>penjadwalan" class="brown-text">Penjadwalan</a></li>
                         <li><a href="<?= base_url() ?>menu" class="brown-text">Menu</a></li>
                         <li><a href="<?= base_url() ?>forum" class="brown-text">Forum</a></li>
-                        <li><a href="<?= base_url() ?>Auth/logout" class="brown-text">Logout</a></li>
                     </ul>
                 </div>
             </div>

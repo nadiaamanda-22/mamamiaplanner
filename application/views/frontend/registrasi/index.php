@@ -35,28 +35,28 @@
                      <div class="row">
                         <div class="input-field col s10 name">
                            <i class="material-icons prefix">account_circle</i>
-                           <input placeholder="Username" name="username" id="username" type="text" value="<?= $this->form_validation->set_value('username') ?>">
+                           <input placeholder="Username" name="username" id="username" type="text" value="<?= $this->form_validation->set_value('username') ?>" autocomplete="off">
                            <label for="username">Username</label>
                            <span class="helper-text"><?= $this->form_validation->error('username'); ?></span>
                         </div>
 
                         <div class="input-field col s10 email">
                            <i class="material-icons prefix">email</i>
-                           <input placeholder="Email" name="email" id="email" type="text" value="<?= $this->form_validation->set_value('email') ?>">
+                           <input placeholder="Email" name="email" id="email" type="text" value="<?= $this->form_validation->set_value('email') ?>" autocomplete="off">
                            <label for="email">Alamat Email</label>
                            <span class="helper-text"><?= $this->form_validation->error('email'); ?></span>
                         </div>
 
                         <div class="input-field col s10 password">
                            <i class="material-icons prefix">lock</i>
-                           <input placeholder="Kata Sandi" name="password1" id="password1" type="password">
+                           <input placeholder="Kata Sandi" name="password1" id="password1" type="password" autocomplete="off">
                            <label for="password1">Kata Sandi</label>
                            <span class="helper-text"><?= $this->form_validation->error('password1'); ?></span>
                         </div>
 
                         <div class="input-field col s10 password">
                            <i class="material-icons prefix">lock</i>
-                           <input placeholder="Kata Sandi" name="password2" id="password2" type="password">
+                           <input placeholder="Kata Sandi" name="password2" id="password2" type="password" autocomplete="off">
                            <label for="password2">Ulangi Kata Sandi</label>
                            <span class="helper-text"><?= $this->form_validation->error('password2'); ?></span>
                         </div>
